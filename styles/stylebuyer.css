@@ -10,6 +10,8 @@ FONT SIZE SYSTEM (px)
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: #393e43;
 }
 /* MAIN COLOUR: #033860
 SECONDARY COLOUR: #087ca7
@@ -18,16 +20,72 @@ GREY COLOUR: #393e43 */
 /* ------------------------ */
 /* GENERAL STYLES */
 /* ------------------------ */
+h1 {
+  align-self: flex-start;
+}
+h2 {
+  font-weight: bolder;
+  font-size: 18px;
+  text-decoration: underline;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
 
+button {
+  font-weight: bolder;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  background-color: #033860;
+}
+
+/* ------------------------ */
+/* CLASSES */
+/* ------------------------ */
+.main-header {
+  margin-bottom: 40px;
+}
+.post-header {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.profile-box {
+  display: flex;
+  background-color: #087ca7;
+  gap: 30px;
+  padding: 15px;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  color: #ebf4f7;
+}
+
+.recent-prop {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: auto;
+  position: relative;
+}
+.property {
+  display: flex;
+  border: 2px solid #033860;
+  gap: 10px;
+}
 .navigation {
   width: 100%;
   height: 82px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 35px;
   align-items: center;
   background-color: #033860;
-  font-family: Helvetica, Arial, sans-serif;
+  font: 12px Helvetica;
 }
 .homeview {
   margin-right: auto;
@@ -35,8 +93,36 @@ GREY COLOUR: #393e43 */
 .profile-box-img {
   margin-left: auto;
 }
-footer {
-  width: 100%;
-  display: flex;
+
+.webicon {
+}
+.search {
+  position: absolute;
+  left: 303px;
+  top: 100px;
+}
+/* ------------------------ */
+/* CLASS EXTENTIONS */
+/* ------------------------ */
+
+.profile-box button {
+  color: #fc7753;
   background-color: #033860;
+  padding: 10px 20px;
+}
+.recent-prop p:first-child {
+  text-align: center;
+  width: 100%;
+  background-color: #033860;
+  color: #ebf4f7;
+  font-size: 16px;
+  padding: 10px;
+}
+.recent-prop p {
+  color: black;
+  font-style: italic;
+  font-size: 14px;
+}
+nav a {
+  color: #ebf4f7;
 }
