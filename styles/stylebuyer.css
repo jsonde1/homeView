@@ -20,6 +20,7 @@ GREY COLOUR: #393e43 */
 /* ------------------------ */
 /* GENERAL STYLES */
 /* ------------------------ */
+
 h1 {
   align-self: flex-start;
 }
@@ -33,12 +34,28 @@ h2 {
 
 button {
   font-weight: bolder;
+  border-radius: 10px;
+  border: none;
+}
+
+.search {
+  display: flex;
+  background-color: #087ca7;
+  color: white;
+  width: 212px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.search svg {
+  stroke: white;
 }
 
 footer {
-  width: 100%;
   display: flex;
   background-color: #033860;
+  margin-top: auto;
 }
 
 /* ------------------------ */
@@ -57,11 +74,21 @@ footer {
 .profile-box {
   display: flex;
   background-color: #087ca7;
+  border-radius: 10px;
   gap: 30px;
   padding: 15px;
   align-items: center;
   justify-content: space-between;
   margin-left: auto;
+}
+.data {
+}
+
+.profile-box img {
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.profile-box p {
   color: #ebf4f7;
 }
 
@@ -71,6 +98,18 @@ footer {
   width: 60%;
   margin: auto;
   position: relative;
+}
+
+table {
+  width: 60%;
+  text-align: center;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
 }
 .property {
   display: flex;
@@ -95,6 +134,7 @@ footer {
 }
 
 .webicon {
+  width: 20px;
 }
 .search {
   position: absolute;
