@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <script defer src="js/script.js"></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content grid--3-cols head-foot-container">
+        <a class="header-home-link" href="index.html">
+          <img class="header-logo" src="img/logo.png" alt="HomeView Logo" />
+        </a>
+        <ul class="navigation-bar">
+          <li><a class="nav-item" href="index.html">Home</a></li>
+          <li><a class="nav-item" href="buyer.html">Buy</a></li>
+          <li><a class="nav-item" href="#">Sell</a></li>
+          <li><a class="nav-item" href="#">Help</a></li>
+          <li><a class="nav-item" href="#">About Us</a></li>
+        </ul>
+        <div class="account-section">
+          <ul class="account-options">
+            <li><a class="account-option" href="#">Login</a></li>
+            <li><a class="account-option" href="#">Sign Up</a></li>
+          </ul>
+          <img class="avatar-pic" src="img/nav-avatar.svg" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-cta shape-bground">
+        <div class="container section-cta-content">
+          <div class="text-section">
+            <h1 class="slogan">Buy Or Sell Any Property. Online. For Free</h1>
+            <p class="site-description">
+              HomeView brings property buyers and sellers together in one place.
+              No estate agents. No hidden fees.
+            </p>
+            <div class="cta-btns">
+              <button class="cta-btn major-btn" href="#">
+                <div class="cta-btn-contents">
+                  <span>Start Searching</span>
+                  <ion-icon
+                    class="cta-btn-icon"
+                    name="search-outline"
+                  ></ion-icon>
+                </div>
+              </button>
+              <button class="cta-btn minor-btn" href="#">
+                <div class="cta-btn-contents">
+                  <span>Create A Listing</span>
+                  <ion-icon
+                    class="cta-btn-icon"
+                    name="create-outline"
+                  ></ion-icon>
+                </div>
+              </button>
+            </div>
+          </div>
+          <img
+            class="landing-image"
+            src="img/house_1.png"
+            alt="An orange house"
+          />
+        </div>
+      </section>
+      <section class="section-just-added">
+        <div class="section-just-added-content container">
+          <h2 class="just-added-header">Just Added</h2>
+          <div class="carousel">
+            <button class="carousel-btn left-btn">
+              <ion-icon
+                name="chevron-back-outline"
+                class="carousel-btn-icon left-carousel-icon"
+              ></ion-icon>
+            </button>
+            <div
+              id="carousel1"
+              class="carousel-property-card card-unfocussed carousel-column-1"
+            >
+              <img class="carousel-property-img" src="img/house_2.png" />
+              <div class="carousel-property-card-content">
+                <div class="carousel-property-tags">
+                  <tag class="carousel-property-tag tag-new">New</tag>
+                  <tag class="carousel-property-tag tag-popular"
+                    >Popular<ion-icon name="flame-outline"></ion-icon
+                  ></tag>
+                </div>
+                <p class="carousel-property-guide-price">guide price</p>
+                <p class="carousel-property-price">£952,000</p>
+                <div class="carousel-icon-section">
+                  <tag class="icon-set"
+                    ><ion-icon
+                      name="bed-outline"
+                      class="carousel-icon"
+                    ></ion-icon
+                    >3</tag
+                  >
+                  <tag class="icon-set"
+                    ><ion-icon
+                      name="rainy-outline"
+                      class="carousel-icon"
+                    ></ion-icon
+                    >3</tag
+                  >
+                </div>
+                <p class="carousel-property-description">
+                  3 bed detached house
+                </p>
+                <p class="carousel-property-address">
+                  65 Mill Rd, Kidderminster, West Midlands
+                </p>
+              </div>
+            </div>
+            <div
+              id="carousel2"
+              class="carousel-property-card card-focussed carousel-column-2"
+            >
+              <img class="carousel-property-img" src="img/house_3.webp" />
+              <div class="carousel-property-card-content">
+                <div class="carousel-property-tags">
+                  <tag class="carousel-property-tag tag-new">New</tag>
+                  <tag class="carousel-property-tag tag-popular"
+                    >Popular<ion-icon name="flame-outline"></ion-icon
+                  ></tag>
+                </div>
+                <p class="carousel-property-guide-price">guide price</p>
+                <p class="carousel-property-price">£952,000</p>
+                <div class="carousel-icon-section">
+                  <tag class="icon-set"
+                    ><ion-icon
+                      name="bed-outline"
+                      class="carousel-icon"
+                    ></ion-icon
+                    >3</tag
+                  >
+                  <tag class="icon-set"
+                    ><ion-icon
+                      name="rainy-outline"
+                      class="carousel-icon"
+                    ></ion-icon
+                    >3</tag
+                  >
+                </div>
+                <p class="carousel-property-description">
+                  3 bed detached house
+                </p>
+                <p class="carousel-property-address">
+                  The Stone House, Break View Drive, Kensington, London
+                </p>
+              </div>
+            </div>
+            <div
+              id="carousel3"
+              class="carousel-property-card card-unfocussed carousel-column-3"
+            >
+              <img class="carousel-property-img" src="img/house_4.webp" />
+              <div class="carousel-property-card-content">
+                <div class="carousel-property-tags">
+                  <tag class="carousel-property-tag tag-new">New</tag>
+                  <tag class="carousel-property-tag tag-popular"
+                    >Popular<ion-icon name="flame-outline"></ion-icon
+                  ></tag>
+                </div>
+                <p class="carousel-property-guide-price">guide price</p>
+                <p class="carousel-property-price">£1,360,000</p>
+                <div class="carousel-icon-section">
+                  <tag class="icon-set"
+                    ><ion-icon
+                      name="bed-outline"
+                      class="carousel-icon"
+                    ></ion-icon
+                    >4</tag
+                  >
+                  <tag class="icon-set"
+                    ><ion-icon
+                      name="rainy-outline"
+                      class="carousel-icon"
+                    ></ion-icon
+                    >4</tag
+                  >
+                </div>
+                <p class="carousel-property-description">
+                  4 bed bungalow for sale
+                </p>
+                <p class="carousel-property-address">
+                  108 Mountain View Housr, Cardiff, Wales
+                </p>
+              </div>
+            </div>
+            <button class="carousel-btn right-btn">
+              <ion-icon
+                name="chevron-forward-outline"
+                class="carousel-btn-icon right-carousel-icon"
+              ></ion-icon>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="section-how">
+        <div class="section-how-content container">
+          <div class="how-blue-box">
+            <h3 class="how-heading">How Does It Work?</h3>
+            <h4 class="how-sub-heading">It's as easy as 1. 2. 3.</h4>
+            <div class="how-grid">
+              <div class="how-heading-group">
+                <ion-icon class="how-icon" name="home-outline"></ion-icon>
+                <p class="how-description-heading">Browse or Add Properties</p>
+              </div>
+              <div class="how-heading-group">
+                <ion-icon class="how-icon" name="search-outline"></ion-icon>
+                <p class="how-description-heading">Arrange Viewings</p>
+              </div>
+              <div class="how-heading-group">
+                <ion-icon class="how-icon" name="cash-outline"></ion-icon>
+                <p class="how-description-heading">Make or Reveive Offers</p>
+              </div>
+              <p class="how-description">
+                Through our market leading property sales database and search
+                facilities.
+              </p>
+              <p class="how-description">
+                Using our in-built messaging facilities and buyer/seller
+                profiles.
+              </p>
+              <p class="how-description">
+                Offers can be made on our site with no commitments or pressure.
+                Make or receive as many as you like!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-testimonials web-bground">
+        <div class="testimonials-content container">
+          <div class="testimonials-container">
+            <div class="testimonial testimonial-right grid-row-1 text-box-1">
+              <div class="testimonial-text testimonial-text-right">
+                <blockquote class="testimonial-quote">
+                  "Selling a house has never felt this easy, I managed to sell
+                  my fathers house. Every single person I've interacted with was
+                  respectful."
+                </blockquote>
+                <p class="testimonial-author">
+                  <em>Megan Green - Buyer - 2020</em>
+                </p>
+              </div>
+              <img
+                class="testimonial-img testimonial-img-1"
+                src="img/face_1.webp"
+                alt="Megan Green Buyer"
+              />
+            </div>
+            <div class="testimonial testimonial-left grid-row-2 text-box-2">
+              <div class="testimonial-text testimonial-text-left">
+                <blockquote class="testimonial-quote">
+                  "I have been using this website to sell multiple houses and
+                  still do to this day, couldn't recommend a better group as
+                  understanding and as well professional as this."
+                </blockquote>
+                <p class="testimonial-author testimonial-author-left">
+                  <em>Michael James - Seller - 2021</em>
+                </p>
+              </div>
+              <img
+                class="testimonial-img testimonial-img-2"
+                src="img/face_3.webp"
+                alt="Megan Green Buyer"
+              />
+            </div>
+            <div class="testimonial testimonial-right grid-row-3 text-box-3">
+              <div class="testimonial-text testimonial-text-right">
+                <blockquote class="testimonial-quote">
+                  "Was my first time selling a house. Absolutely fantastic
+                  experience. I thought it would be really stressful, but I
+                  couldn't have been more wrong!"
+                </blockquote>
+                <p class="testimonial-author">
+                  <em>Natasha Blue - Buyer - 2021</em>
+                </p>
+              </div>
+              <img
+                class="testimonial-img testimonial-img-3"
+                src="img/face_2.webp"
+                alt="Megan Green Buyer"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-cta-final">
+        <div class="cta-final-content container">
+          <h5 class="final-heading">Join The House Trading Revolution</h5>
+          <div class="cta-btns final-btns">
+            <button class="cta-btn major-btn" href="#">
+              <div class="cta-btn-contents">
+                <span>Start Searching</span>
+                <ion-icon class="cta-btn-icon" name="search-outline"></ion-icon>
+              </div>
+            </button>
+            <button class="cta-btn minor-btn" href="#">
+              <div class="cta-btn-contents">
+                <span>Create A Listing</span>
+                <ion-icon class="cta-btn-icon" name="create-outline"></ion-icon>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-content head-foot-container">
+        <div class="footer-logo-section">
+          <img class="footer-logo" src="img/logo.png" alt="HomeView logo" />
+          <span class="copyright">Copyright &copy; 2022 HomeView</span>
+        </div>
+        <ul class="footer-nav-bar">
+          <li>
+            <a class="footer-nav-link" href="#">
+              <ion-icon name="chatbubbles-outline"></ion-icon
+              ><span>FAQs</span></a
+            >
+          </li>
+          <li>
+            <a class="footer-nav-link" href="#">
+              <ion-icon name="help-circle-outline"></ion-icon
+              ><span>About Us</span></a
+            >
+          </li>
+          <li>
+            <a class="footer-nav-link" href="#">
+              <ion-icon name="mail-outline"></ion-icon
+              ><span>Contact Us</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

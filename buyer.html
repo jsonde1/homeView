@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <script defer src="js/script.js"></script>
+    <title>Buyer Page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content grid--3-cols head-foot-container">
+        <a class="header-home-link" href="index.html">
+          <img class="header-logo" src="img/logo.png" alt="HomeView Logo" />
+        </a>
+        <ul class="navigation-bar">
+          <li><a class="nav-item" href="index.html">Home</a></li>
+          <li><a class="nav-item" href="buyer.html">Buy</a></li>
+          <li><a class="nav-item" href="#">Sell</a></li>
+          <li><a class="nav-item" href="#">Help</a></li>
+          <li><a class="nav-item" href="#">About Us</a></li>
+        </ul>
+        <div class="account-section">
+          <ul class="account-options">
+            <li><a class="account-option" href="#">Login</a></li>
+            <li><a class="account-option" href="#">Sign Up</a></li>
+          </ul>
+          <img class="avatar-pic" src="img/nav-avatar.svg" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-buy-header">
+        <div class="buy-header-content container">
+          <div class="buy-header-top grid--2-cols">
+            <h5 class="page-header">Buy</h5>
+            <div class="account-container">
+              <img
+                class="profile-pic"
+                src="img/face_1.webp"
+                alt="Your profile picture"
+              />
+              <div class="account-details">
+                <span class="account-name profile-info">Megan Green</span>
+                <span class="account-username profile-info">@megGrn278</span>
+              </div>
+              <button class="profile-btn">Edit Profile</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-buy-main">
+        <div class="buy-main-content container">
+          <div class="buy-main-content-container">
+            <button class="cta-btn major-btn buyer-cta" href="#">
+              <div class="cta-btn-contents">
+                <span>Start Searching</span>
+                <ion-icon class="cta-btn-icon" name="search-outline"></ion-icon>
+              </div>
+            </button>
+            <div class="recently-viewed">
+              <div class="user-content-title-container">
+                <span class="user-content-title"
+                  >Recently Viewed Properties</span
+                >
+              </div>
+              <div class="recently-viewed-content">
+                <div class="recently-viewed-property property-1">
+                  <a href="#">
+                    <img
+                      class="recently-viewed-img"
+                      src="img/house_4.webp"
+                      alt="108 Mountain View House, Cardiff, Wales"
+                    />
+                  </a>
+                  <div class="recently-viewed-property-info">
+                    <a class="recently-viewed-property-link" href="#">
+                      <h2 class="recently-viewed-property-name">
+                        108 Mountain View House, Cardiff, Wales
+                      </h2>
+                    </a>
+                    <div class="recently-viewed-listing-details">
+                      <span class="recently-viewed-listing-date"
+                        >Property listed on 02/02/2022 @ 17:00</span
+                      >
+                      <span class="recently-viewed-listing-duration"
+                        >Listing active for 7 days and 14 hours</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="recently-viewed-property property-2">
+                  <a href="#">
+                    <img
+                      class="recently-viewed-img"
+                      src="img/house_2.png"
+                      alt="65 Mill Rd, Kidderminster, West Midlands"
+                    />
+                  </a>
+                  <div class="recently-viewed-property-info">
+                    <a class="recently-viewed-property-link" href="#">
+                      <h2 class="recently-viewed-property-name">
+                        65 Mill Rd, Kidderminster, West Midlands
+                      </h2>
+                    </a>
+                    <div class="recently-viewed-listing-details">
+                      <span class="recently-viewed-listing-date"
+                        >Property listed on 05/02/2022 @ 18:35</span
+                      >
+                      <span class="recently-viewed-listing-duration"
+                        >Listing active for 4 days and 13 hours</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="recently-viewed-property property-3">
+                  <a href="#">
+                    <img
+                      class="recently-viewed-img"
+                      src="img/house_3.webp"
+                      alt="The Stone House, Break View Drive, Kensington, London"
+                    />
+                  </a>
+                  <div class="recently-viewed-property-info">
+                    <a class="recently-viewed-property-link" href="#">
+                      <h2 class="recently-viewed-property-name">
+                        The Stone House, Break View Drive, Kensington, London
+                      </h2>
+                    </a>
+                    <div class="recently-viewed-listing-details">
+                      <span class="recently-viewed-listing-date"
+                        >Property listed on 01/12/2021 @ 12:30</span
+                      >
+                      <span class="recently-viewed-listing-duration"
+                        >Listing active for 4 weeks 7 days and 14 hours</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="messages buyer-messages">
+              <div class="user-content-title-container">
+                <span class="user-content-title">Messages</span>
+              </div>
+              <div class="messages-content">
+                <div class="buyer-message">
+                  <div class="buyer-message-info">
+                    <img
+                      class="buyer-message-img"
+                      src="img/face_3.webp"
+                      alt="Profile picture of sender"
+                    />
+                    <div class="buyer-message-sender-info">
+                      <p class="buyer-message-name">Michael James</p>
+                      <p class="buyer-message-username">@mjames123</p>
+                    </div>
+                    <p class="buyer-message-received-info">Yesterday @ 19:00</p>
+                  </div>
+                  <div class="buyer-message-property-info">
+                    <img
+                      class="buyer-message-property-img"
+                      src="img/house_4.webp"
+                      alt="Image of property related to the message"
+                    />
+                    <span class="buyer-message-property-address"
+                      >108 Moutain View House, Cardiff, Wales</span
+                    >
+                  </div>
+                  <div class="buyer-message-type">
+                    <span class="buyer-message-type-text">Viewing Request</span>
+                    <ion-icon
+                      class="buyer-message-icon"
+                      name="eye-outline"
+                    ></ion-icon>
+                  </div>
+                  <p class="buyer-message-message">
+                    Hi!<br />I am available for a viewing tomorrow at 2:30pm if
+                    this works for you? Let me know.<br />Michael
+                  </p>
+                  <div class="buyer-message-options">
+                    <button class="buyer-message-reply-btn">
+                      Reply<ion-icon
+                        class="buyer-message-options-icon"
+                        href="#"
+                        name="mail-outline"
+                      ></ion-icon>
+                    </button>
+                    <button class="buyer-message-delete-btn">
+                      Delete
+                      <ion-icon
+                        class="buyer-message-options-icon"
+                        name="trash-bin-outline"
+                      ></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="buyer-message">
+                  <div class="buyer-message-info">
+                    <img
+                      class="buyer-message-img"
+                      src="img/face_3.webp"
+                      alt="Profile picture of sender"
+                    />
+                    <div class="buyer-message-sender-info">
+                      <p class="buyer-message-name">Michael James</p>
+                      <p class="buyer-message-username">@mjames123</p>
+                    </div>
+                    <p class="buyer-message-received-info">Yesterday @ 19:00</p>
+                  </div>
+                  <div class="buyer-message-property-info">
+                    <img
+                      class="buyer-message-property-img"
+                      src="img/house_4.webp"
+                      alt="Image of property related to the message"
+                    />
+                    <span class="buyer-message-property-address"
+                      >108 Moutain View House, Cardiff, Wales</span
+                    >
+                  </div>
+                  <div class="buyer-message-type">
+                    <span class="buyer-message-type-text">Viewing Request</span>
+                    <ion-icon
+                      class="buyer-message-icon"
+                      name="eye-outline"
+                    ></ion-icon>
+                  </div>
+                  <p class="buyer-message-message">
+                    Hi!<br />I am available for a viewing tomorrow at 2:30pm if
+                    this works for you? Let me know.<br />Michael
+                  </p>
+                  <div class="buyer-message-options">
+                    <button class="buyer-message-reply-btn"></button>
+                    <button class="buyer-message-delete-btn"></button>
+                  </div>
+                </div>
+                <div class="buyer-message">
+                  <div class="buyer-message-info">
+                    <img
+                      class="buyer-message-img"
+                      src="img/face_3.webp"
+                      alt="Profile picture of sender"
+                    />
+                    <div class="buyer-message-sender-info">
+                      <p class="buyer-message-name">Michael James</p>
+                      <p class="buyer-message-username">@mjames123</p>
+                    </div>
+                    <p class="buyer-message-received-info">Yesterday @ 19:00</p>
+                  </div>
+                  <div class="buyer-message-property-info">
+                    <img
+                      class="buyer-message-property-img"
+                      src="img/house_4.webp"
+                      alt="Image of property related to the message"
+                    />
+                    <span class="buyer-message-property-address"
+                      >108 Moutain View House, Cardiff, Wales</span
+                    >
+                  </div>
+                  <div class="buyer-message-type">
+                    <span class="buyer-message-type-text">Viewing Request</span>
+                    <ion-icon
+                      class="buyer-message-icon"
+                      name="eye-outline"
+                    ></ion-icon>
+                  </div>
+                  <p class="buyer-message-message">
+                    Hi!<br />I am available for a viewing tomorrow at 2:30pm if
+                    this works for you? Let me know.<br />Michael
+                  </p>
+                  <div class="buyer-message-options">
+                    <button class="buyer-message-reply-btn"></button>
+                    <button class="buyer-message-delete-btn"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-content head-foot-container">
+        <div class="footer-logo-section">
+          <img class="footer-logo" src="img/logo.png" alt="HomeView logo" />
+          <span class="copyright">Copyright &copy; 2022 HomeView</span>
+        </div>
+        <ul class="footer-nav-bar">
+          <li>
+            <a class="footer-nav-link" href="#">
+              <ion-icon name="chatbubbles-outline"></ion-icon
+              ><span>FAQs</span></a
+            >
+          </li>
+          <li>
+            <a class="footer-nav-link" href="#">
+              <ion-icon name="help-circle-outline"></ion-icon
+              ><span>About Us</span></a
+            >
+          </li>
+          <li>
+            <a class="footer-nav-link" href="#">
+              <ion-icon name="mail-outline"></ion-icon
+              ><span>Contact Us</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
