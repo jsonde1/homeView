@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <script defer src="js/script.js"></script>
+    <title>Seller Page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content grid--3-cols head-foot-container">
+        <a class="header-home-link" href="index.html">
+          <img class="header-logo" src="img/logo.png" alt="HomeView Logo" />
+        </a>
+        <ul class="navigation-bar">
+          <li><a class="nav-item" href="index.html">Home</a></li>
+          <li><a class="nav-item" href="buyer.html">Buy</a></li>
+          <li><a class="nav-item" href="seller.html">Sell</a></li>
+          <li><a class="nav-item" href="#">Help</a></li>
+          <li><a class="nav-item" href="#">About Us</a></li>
+        </ul>
+        <div class="account-section">
+          <ul class="account-options">
+            <li><a class="account-option" href="#">Login</a></li>
+            <li><a class="account-option" href="#">Sign Up</a></li>
+          </ul>
+          <img class="avatar-pic" src="img/nav-avatar.svg" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-sell-header">
+        <div class="sell-header-content container">
+          <div class="sell-header-top grid--2-cols">
+            <h5 class="page-header">Sell</h5>
+            <div class="account-container">
+              <img
+                class="profile-pic"
+                src="img/face_3.webp"
+                alt="Your profile picture"
+              />
+              <div class="account-details">
+                <span class="account-name profile-info">Michael James</span>
+                <span class="account-username profile-info">@mjames123</span>
+              </div>
+              <button class="profile-btn">Edit Profile</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-sell-main">
+        <div class="sell-main-content container">
+          <div class="sell-main-content-container">
+            <button class="cta-btn major-btn seller-cta" href="#">
+              <div class="btn-contents">
+                <span>Create a Listing</span>
+                <ion-icon class="cta-btn-icon" name="create-outline"></ion-icon>
+              </div>
+            </button>
+
+            <div class="messages seller-messages">
+              <div class="user-content-title-container">
+                <span class="user-content-title">Messages</span>
+              </div>
+              <div class="messages-content">
+                <div class="seller-message message">
+                  <div class="seller-message-info message-info">
+                    <img
+                      class="seller-message-img message-img"
+                      src="img/face_1.webp"
+                      alt="Profile picture of sender"
+                    />
+                    <div class="seller-message-sender-info message-sender-info">
+                      <p class="seller-message-name message-name">
+                        Megan Green
+                      </p>
+                      <p class="seller-message-username message-username">
+                        @megGrn278
+                      </p>
+                    </div>
+                    <p
+                      class="seller-message-received-info message-received-info"
+                    >
+                      Yesterday @ 18:00
+                    </p>
+                  </div>
+                  <div
+                    class="seller-message-property-info message-property-info"
+                  >
+                    <img
+                      class="seller-message-property-img message-property-img"
+                      src="img/house_4.webp"
+                      alt="Image of property related to the message"
+                    />
+                    <span
+                      class="seller-message-property-address message-property-address"
+                      >108 Moutain View House, Cardiff, Wales</span
+                    >
+                  </div>
+                  <div class="seller-message-type message-type">
+                    <span class="seller-message-type-text message-type-text"
+                      >Viewing Request</span
+                    >
+                    <ion-icon
+                      class="seller-message-icon message-icon"
+                      name="eye-outline"
+                    ></ion-icon>
+                  </div>
+
+                  <div
+                    class="seller-message-message-section message-message-section"
+                  >
+                    <p class="seller-message-message message-message">
+                      Hi there!<br /><br />I am interested in buying and would
+                      love to view your property! Can you let me know when you
+                      are free please?<br /><br />Thanks!
+                    </p>
+                    <div class="message-read-space new-message">
+                      <div class="message-new">
+                        <ion-icon
+                          class="message-new-icon"
+                          name="star-outline"
+                        ></ion-icon>
+                        <span class="message-new-text">New Message</span>
+                      </div>
+                      <div class="message-read">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="message-read-icon"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="message-new-text">Reply Sent</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="seller-message-options message-options">
+                    <button
+                      class="seller-message-reply-btn reply-btn options-btn"
+                    >
+                      <div class="btn-contents">
+                        <span>Reply</span
+                        ><ion-icon
+                          class="seller-message-reply-icon btn-icon"
+                          href="#"
+                          name="mail-outline"
+                        ></ion-icon>
+                      </div>
+                    </button>
+                    <button
+                      class="seller-message-delete-btn delete-btn options-btn"
+                    >
+                      Delete
+                      <ion-icon
+                        class="seller-message-delete-icon btn-icon"
+                        name="trash-bin-outline"
+                      ></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <div class="seller-message message">
+                  <div class="seller-message-info message-info">
+                    <img
+                      class="seller-message-img message-img"
+                      src="img/face_2.webp"
+                      alt="Profile picture of sender"
+                    />
+                    <div class="seller-message-sender-info message-sender-info">
+                      <p class="seller-message-name message-name">
+                        Natasha Blue
+                      </p>
+                      <p class="seller-message-username message-username">
+                        @NB_678
+                      </p>
+                    </div>
+                    <p
+                      class="seller-message-received-info message-received-info"
+                    >
+                      12/02/2022 @ 16:25
+                    </p>
+                  </div>
+                  <div
+                    class="seller-message-property-info message-property-info"
+                  >
+                    <img
+                      class="seller-message-property-img message-property-img"
+                      src="img/house_4.webp"
+                      alt="Image of property related to the message"
+                    />
+                    <span
+                      class="seller-message-property-address message-property-address"
+                      >108 Moutain View House, Cardiff, Wales</span
+                    >
+                  </div>
+                  <div class="seller-message-type message-type">
+                    <span class="seller-message-type-text message-type-text"
+                      >Offer</span
+                    >
+                    <ion-icon
+                      class="seller-message-icon message-icon"
+                      name="cash-outline"
+                    ></ion-icon>
+                  </div>
+
+                  <div
+                    class="seller-message-message-section message-message-section"
+                  >
+                    <p class="seller-message-message message-message">
+                      Hello,<br /><br />I would like to make you an offer of
+                      £1,000,000 on this property. <br /><br />I hope you can
+                      consider this offer. I have been viewing many different
+                      properties accross different platforms, but yours is the
+                      best by far! <br /><br />
+                      Please reply to confirm you are happy with this.<br /><br />Many
+                      thanks,<br />Natasha
+                    </p>
+                    <div class="message-read-space read-message">
+                      <div class="message-new">
+                        <ion-icon
+                          class="message-new-icon"
+                          name="star-outline"
+                        ></ion-icon>
+                        <span class="message-new-text">New Message</span>
+                      </div>
+                      <div class="message-read">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="message-read-icon"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="message-new-text">Reply Sent</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="seller-message-options message-options">
+                    <button
+                      class="seller-message-reply-btn reply-btn options-btn"
+                    >
+                      <div class="btn-contents">
+                        <span>Reply</span
+                        ><ion-icon
+                          class="seller-message-reply-icon btn-icon"
+                          href="#"
+                          name="mail-outline"
+                        ></ion-icon>
+                      </div>
+                    </button>
+                    <button
+                      class="seller-message-delete-btn delete-btn options-btn"
+                    >
+                      Delete
+                      <ion-icon
+                        class="seller-message-delete-icon btn-icon"
+                        name="trash-bin-outline"
+                      ></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recently-viewed">
+              <div class="user-content-title-container">
+                <span class="user-content-title"
+                  >Recently Viewed Properties</span
+                >
+              </div>
+              <div class="recently-viewed-content">
+                <div class="recently-viewed-property property-1">
+                  <a href="#">
+                    <img
+                      class="recently-viewed-img"
+                      src="img/house_4.webp"
+                      alt="108 Mountain View House, Cardiff, Wales"
+                    />
+                  </a>
+                  <div class="recently-viewed-property-info">
+                    <a class="recently-viewed-property-link" href="#">
+                      <h2 class="recently-viewed-property-name">
+                        108 Mountain View House, Cardiff, Wales
+                      </h2>
+                    </a>
+                    <div class="recently-viewed-listing-details">
+                      <span class="recently-viewed-listing-date"
+                        >Property listed on 02/02/2022 @ 17:00</span
+                      >
+                      <span class="recently-viewed-listing-duration"
+                        >Listing active for 7 days and 14 hours</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="recently-viewed-property property-2">
+                  <a href="#">
+                    <img
+                      class="recently-viewed-img"
+                      src="img/house_2.png"
+                      alt="65 Mill Rd, Kidderminster, West Midlands"
+                    />
+                  </a>
+                  <div class="recently-viewed-property-info">
+                    <a class="recently-viewed-property-link" href="#">
+                      <h2 class="recently-viewed-property-name">
+                        65 Mill Rd, Kidderminster, West Midlands
+                      </h2>
+                    </a>
+                    <div class="recently-viewed-listing-details">
+                      <span class="recently-viewed-listing-date"
+                        >Property listed on 05/02/2022 @ 18:35</span
+                      >
+                      <span class="recently-viewed-listing-duration"
+                        >Listing active for 4 days and 13 hours</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="recently-viewed-property property-3">
+                  <a href="#">
+                    <img
+                      class="recently-viewed-img"
+                      src="img/house_3.webp"
+                      alt="The Stone House, Break View Drive, Kensington, London"
+                    />
+                  </a>
+                  <div class="recently-viewed-property-info">
+                    <a class="recently-viewed-property-link" href="#">
+                      <h2 class="recently-viewed-property-name">
+                        The Stone House, Break View Drive, Kensington, London
+                      </h2>
+                    </a>
+                    <div class="recently-viewed-listing-details">
+                      <span class="recently-viewed-listing-date"
+                        >Property listed on 01/12/2021 @ 12:30</span
+                      >
+                      <span class="recently-viewed-listing-duration"
+                        >Listing active for 4 weeks 7 days and 14 hours</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-content head-foot-container">
+        <div class="footer-logo-section">
+          <img class="footer-logo" src="img/logo.png" alt="HomeView logo" />
+          <span class="copyright">Copyright &copy; 2022 HomeView</span>
+        </div>
+        <ul class="footer-nav-bar">
+          <li>
+            <a class="footer-nav-link" href="#">
+              <ion-icon name="chatbubbles-outline"></ion-icon
+              ><span>FAQs</span></a
+            >
+          </li>
+          <li>
+            <a class="footer-nav-link" href="#">
+              <ion-icon name="help-circle-outline"></ion-icon
+              ><span>About Us</span></a
+            >
+          </li>
+          <li>
+            <a class="footer-nav-link" href="#">
+              <ion-icon name="mail-outline"></ion-icon
+              ><span>Contact Us</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -354,6 +354,60 @@ p {
   color: #ebf4f7;
 }
 
+.reply-btn,
+.reply-btn:link,
+.reply-btn:visited {
+  background-color: #087ca7;
+  color: #ebf4f7;
+}
+
+.reply-btn:hover,
+.reply-btn:active {
+  background-color: #2189b0;
+}
+
+.delete-btn,
+.delete-btn:link,
+.delete-btn:visited {
+  background-color: #033860;
+  color: #fc7753;
+}
+
+.delete-btn:hover,
+.delete-btn:active {
+  background-color: #2189b0;
+  box-shadow: inset 0 0 0 2px #fc7753;
+  color: #ebf4f7;
+}
+
+.options-btn {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0.8rem 1.6rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 4.8rem rgba(0, 0, 0, 0.1);
+  height: 3rem;
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.btn-contents {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.btn-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
 /* Re-useable account box */
 
 .account-container {
@@ -391,4 +445,182 @@ p {
   color: #ebf4f7;
   font-size: 1.2rem;
   line-height: 1.2;
+}
+
+/* Messaging section */
+
+.messages-content {
+  display: grid;
+  height: 30rem;
+  overflow-y: scroll;
+  border: solid 3px #033860;
+}
+
+.message {
+  height: 14.7rem;
+  width: auto;
+  display: grid;
+  grid-template-columns: 0.15fr 0.15fr 0.15fr 0.4fr 0.15fr;
+}
+
+.message-info {
+  grid-column: 1;
+  display: grid;
+  grid-template-rows: 0.5fr 0.25fr 0.25fr;
+  justify-items: center;
+  align-items: center;
+
+  background-color: #f9f6f6;
+  font-size: 1.2rem;
+}
+
+.message-img {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 100px;
+}
+
+.message-sender-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.message-property-info {
+  grid-column: 2;
+  display: grid;
+  grid-template-rows: 0.6fr 0.4fr;
+  background-color: #fefefe;
+  font-size: 0.8rem;
+}
+
+.message-property-img {
+  height: 2.4rem;
+}
+
+.message-property-img {
+  height: 7.5rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.message-property-address {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+.message-type {
+  grid-column: 3;
+  display: grid;
+  grid-template-rows: 0.25fr 0.5fr 0.5fr 0.25fr;
+  background-color: #f9f6f6;
+  font-size: 0.8rem;
+}
+
+.message-type-text {
+  justify-self: center;
+  align-self: center;
+  grid-row: 2;
+  font-size: 1.2rem;
+}
+
+.message-icon {
+  justify-self: center;
+  align-self: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  grid-row: 3;
+}
+
+.message-message-section {
+  grid-column: 4;
+  height: 14.7rem;
+  background-color: #fefefe;
+  display: grid;
+  grid-template-rows: 0.75fr 0.25fr;
+}
+
+.message-message {
+  display: block;
+  line-height: 1.2;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  overflow-y: scroll;
+}
+
+.message-options {
+  grid-column: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  background-color: #f9f6f6;
+  justify-content: center;
+  align-items: center;
+  /* padding: 1.6rem 1.6rem; */
+}
+
+.message-read-space {
+  position: relative;
+}
+
+.read-message .message-new {
+  display: none;
+}
+
+.new-message .message-new {
+  position: absolute;
+  width: 100%;
+  height: 5rem;
+  padding-left: 0.8em;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    0deg,
+    #f9f6f6,
+    rgba(249, 246, 246, 0.76) 80%,
+    rgba(249, 246, 246, 0)
+  );
+}
+
+.new-message .message-read {
+  display: none;
+}
+
+.message-read-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #fc7753;
+}
+
+.read-message .message-read {
+  position: absolute;
+  width: 100%;
+  height: 5rem;
+  padding-left: 0.8em;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    0deg,
+    #f9f6f6,
+    rgba(249, 246, 246, 0.76) 80%,
+    rgba(249, 246, 246, 0)
+  );
+}
+
+.message-new-icon {
+  color: #fc7753;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.message-new-text {
+  font-size: 1.2rem;
+  font-weight: 500;
 }

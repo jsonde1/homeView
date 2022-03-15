@@ -67,12 +67,6 @@
   gap: 1.2rem;
 }
 
-.cta-btn-contents {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-}
-
 .cta-btn-icon {
   height: 1.8rem;
   width: 1.8rem;
@@ -481,98 +475,76 @@
   text-decoration: underline;
 }
 
-/* Messages section */
+/* Seller page main content */
 
-.messages-content {
+.section-sell-header {
+  padding: 2.4rem 0;
+}
+
+.section-sell-main {
+  padding: 1.2rem 0;
+}
+
+.sell-main-content-container {
   display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1fr auto auto;
+  margin: 0 2.4rem 4.2rem 2.4rem;
+  gap: 2.4rem;
+}
+
+.seller-cta,
+.seller-cta:link,
+.seller-cta:visited {
+  height: 3.4rem;
+  width: 20%;
+}
+
+.recently-viewed {
+  margin-bottom: 2.4rem;
+}
+
+.recently-viewed-content {
+  display: grid;
+  grid-template-columns: 1;
   grid-template-rows: repeat (3, 1fr);
   height: 30rem;
   overflow-y: scroll;
   border: solid 3px #033860;
 }
 
-.buyer-message {
+.recently-viewed-property {
   height: 15rem;
-  display: grid;
-  grid-template-columns: 0.15fr 0.15fr 0.15fr 0.4fr 0.15fr;
-}
-
-.buyer-message-info {
-  grid-column: 1;
-  display: grid;
-  grid-template-rows: 0.5fr 0.25fr 0.25fr;
-  justify-items: center;
+  width: auto;
+  display: flex;
+  gap: 2.4rem;
   align-items: center;
-  background-color: #fefefe;
-  font-size: 1.2rem;
 }
 
-.buyer-message-img {
-  width: 5.5rem;
-  height: 5.5rem;
-  border-radius: 100px;
+.recently-viewed-property-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 }
 
-.buyer-message-property-img {
-  height: 2.4rem;
+.recently-viewed-img {
+  height: 15rem;
 }
 
-.buyer-message-sender-info {
+.recently-viewed-listing-details {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
 }
 
-.buyer-message-property-info {
-  grid-column: 2;
-  display: grid;
-  grid-template-rows: 0.6fr 0.4fr;
-  background-color: #f9f6f6;
-  font-size: 0.8rem;
+.recently-viewed-property-link:link,
+.recently-viewed-property-link:visited .recently-viewed-property-name {
+  text-decoration: none;
+  cursor: pointer;
+  color: #495057;
 }
 
-.buyer-message-property-img {
-  height: 7.5rem;
-  justify-self: center;
-  align-self: center;
-}
-
-.buyer-message-property-address {
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-}
-
-.buyer-message-type {
-  grid-column: 3;
-  display: grid;
-  grid-template-rows: 0.5fr 0.5fr;
-  background-color: #fefefe;
-  font-size: 0.8rem;
-}
-
-.buyer-message-type-text {
-  justify-self: center;
-  align-self: center;
-}
-
-.buyer-message-icon {
-  justify-self: center;
-  align-self: center;
-}
-
-.buyer-message-message {
-  grid-column: 4;
-  line-height: 2;
-  padding: 0.8rem;
-  background-color: #f9f6f6;
-}
-
-.buyer-message-options {
-  grid-column: 5;
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  background-color: #fefefe;
-  justify-content: center;
+.recently-viewed-property-link:hover,
+.recently-viewed-property-link:active .recently-viewed-property-name {
+  text-decoration: underline;
 }

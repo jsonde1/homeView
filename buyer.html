@@ -24,7 +24,7 @@
         <ul class="navigation-bar">
           <li><a class="nav-item" href="index.html">Home</a></li>
           <li><a class="nav-item" href="buyer.html">Buy</a></li>
-          <li><a class="nav-item" href="#">Sell</a></li>
+          <li><a class="nav-item" href="seller.html">Sell</a></li>
           <li><a class="nav-item" href="#">Help</a></li>
           <li><a class="nav-item" href="#">About Us</a></li>
         </ul>
@@ -61,7 +61,7 @@
         <div class="buy-main-content container">
           <div class="buy-main-content-container">
             <button class="cta-btn major-btn buyer-cta" href="#">
-              <div class="cta-btn-contents">
+              <div class="btn-contents">
                 <span>Start Searching</span>
                 <ion-icon class="cta-btn-icon" name="search-outline"></ion-icon>
               </div>
@@ -152,133 +152,310 @@
                 <span class="user-content-title">Messages</span>
               </div>
               <div class="messages-content">
-                <div class="buyer-message">
-                  <div class="buyer-message-info">
+                <div class="buyer-message message">
+                  <div class="buyer-message-info message-info">
                     <img
-                      class="buyer-message-img"
+                      class="buyer-message-img message-img"
                       src="img/face_3.webp"
                       alt="Profile picture of sender"
                     />
-                    <div class="buyer-message-sender-info">
-                      <p class="buyer-message-name">Michael James</p>
-                      <p class="buyer-message-username">@mjames123</p>
+                    <div class="buyer-message-sender-info message-sender-info">
+                      <p class="buyer-message-name message-name">
+                        Michael James
+                      </p>
+                      <p class="buyer-message-username message-username">
+                        @mjames123
+                      </p>
                     </div>
-                    <p class="buyer-message-received-info">Yesterday @ 19:00</p>
+                    <p
+                      class="buyer-message-received-info message-received-info"
+                    >
+                      Yesterday @ 19:00
+                    </p>
                   </div>
-                  <div class="buyer-message-property-info">
+                  <div
+                    class="buyer-message-property-info message-property-info"
+                  >
                     <img
-                      class="buyer-message-property-img"
+                      class="buyer-message-property-img message-property-img"
                       src="img/house_4.webp"
                       alt="Image of property related to the message"
                     />
-                    <span class="buyer-message-property-address"
+                    <span
+                      class="buyer-message-property-address message-property-address"
                       >108 Moutain View House, Cardiff, Wales</span
                     >
                   </div>
-                  <div class="buyer-message-type">
-                    <span class="buyer-message-type-text">Viewing Request</span>
+                  <div class="buyer-message-type message-type">
+                    <span class="buyer-message-type-text message-type-text"
+                      >Viewing Request</span
+                    >
                     <ion-icon
-                      class="buyer-message-icon"
+                      class="buyer-message-icon message-icon"
                       name="eye-outline"
                     ></ion-icon>
                   </div>
-                  <p class="buyer-message-message">
-                    Hi!<br />I am available for a viewing tomorrow at 2:30pm if
-                    this works for you? Let me know.<br />Michael
-                  </p>
-                  <div class="buyer-message-options">
-                    <button class="buyer-message-reply-btn">
-                      Reply<ion-icon
-                        class="buyer-message-options-icon"
-                        href="#"
-                        name="mail-outline"
-                      ></ion-icon>
+                  <div
+                    class="buyer-message-message-section message-message-section"
+                  >
+                    <p class="buyer-message-message message-message">
+                      Hi!<br /><br />I am available for a viewing tomorrow at
+                      2:30pm if this works for you?<br /><br />
+                      Let me know.<br /><br />Michael
+                    </p>
+                    <div class="message-read-space new-message">
+                      <div class="message-new">
+                        <ion-icon
+                          class="message-new-icon"
+                          name="star-outline"
+                        ></ion-icon>
+                        <span class="message-new-text">New Message</span>
+                      </div>
+                      <div class="message-read">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="message-read-icon"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="message-new-text">Reply Sent</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buyer-message-options message-options">
+                    <button
+                      class="buyer-message-reply-btn reply-btn options-btn"
+                    >
+                      <div class="btn-contents">
+                        <span>Reply</span
+                        ><ion-icon
+                          class="buyer-message-reply-icon btn-icon"
+                          href="#"
+                          name="mail-outline"
+                        ></ion-icon>
+                      </div>
                     </button>
-                    <button class="buyer-message-delete-btn">
+                    <button
+                      class="buyer-message-delete-btn delete-btn options-btn"
+                    >
                       Delete
                       <ion-icon
-                        class="buyer-message-options-icon"
+                        class="buyer-message-delete-icon btn-icon"
                         name="trash-bin-outline"
                       ></ion-icon>
                     </button>
                   </div>
                 </div>
-                <div class="buyer-message">
-                  <div class="buyer-message-info">
+                <div class="buyer-message message">
+                  <div class="buyer-message-info message-info">
                     <img
-                      class="buyer-message-img"
+                      class="buyer-message-img message-img"
                       src="img/face_3.webp"
                       alt="Profile picture of sender"
                     />
-                    <div class="buyer-message-sender-info">
-                      <p class="buyer-message-name">Michael James</p>
-                      <p class="buyer-message-username">@mjames123</p>
+                    <div class="buyer-message-sender-info message-sender-info">
+                      <p class="buyer-message-name message-name">
+                        Michael James
+                      </p>
+                      <p class="buyer-message-username message-username">
+                        @mjames123
+                      </p>
                     </div>
-                    <p class="buyer-message-received-info">Yesterday @ 19:00</p>
+                    <p
+                      class="buyer-message-received-info message-received-info"
+                    >
+                      Yesterday @ 19:00
+                    </p>
                   </div>
-                  <div class="buyer-message-property-info">
+                  <div
+                    class="buyer-message-property-info message-property-info"
+                  >
                     <img
-                      class="buyer-message-property-img"
+                      class="buyer-message-property-img message-property-img"
                       src="img/house_4.webp"
                       alt="Image of property related to the message"
                     />
-                    <span class="buyer-message-property-address"
+                    <span
+                      class="buyer-message-property-address message-property-address"
                       >108 Moutain View House, Cardiff, Wales</span
                     >
                   </div>
-                  <div class="buyer-message-type">
-                    <span class="buyer-message-type-text">Viewing Request</span>
+                  <div class="buyer-message-type message-type">
+                    <span class="buyer-message-type-text message-type-text"
+                      >Viewing Request</span
+                    >
                     <ion-icon
-                      class="buyer-message-icon"
+                      class="buyer-message-icon message-icon"
                       name="eye-outline"
                     ></ion-icon>
                   </div>
-                  <p class="buyer-message-message">
-                    Hi!<br />I am available for a viewing tomorrow at 2:30pm if
-                    this works for you? Let me know.<br />Michael
-                  </p>
-                  <div class="buyer-message-options">
-                    <button class="buyer-message-reply-btn"></button>
-                    <button class="buyer-message-delete-btn"></button>
+                  <div
+                    class="buyer-message-message-section message-message-section"
+                  >
+                    <p class="buyer-message-message message-message">
+                      Hi!<br /><br />I am available for a viewing tomorrow at
+                      2:30pm if this works for you?<br /><br />
+                      Let me know.<br /><br />Michael
+                    </p>
+                    <div class="message-read-space new-message">
+                      <div class="message-new">
+                        <ion-icon
+                          class="message-new-icon"
+                          name="star-outline"
+                        ></ion-icon>
+                        <span class="message-new-text">New Message</span>
+                      </div>
+                      <div class="message-read">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="message-read-icon"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="message-new-text">Reply Sent</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buyer-message-options message-options">
+                    <button
+                      class="buyer-message-reply-btn reply-btn options-btn"
+                    >
+                      <div class="btn-contents">
+                        <span>Reply</span
+                        ><ion-icon
+                          class="buyer-message-reply-icon btn-icon"
+                          href="#"
+                          name="mail-outline"
+                        ></ion-icon>
+                      </div>
+                    </button>
+                    <button
+                      class="buyer-message-delete-btn delete-btn options-btn"
+                    >
+                      Delete
+                      <ion-icon
+                        class="buyer-message-delete-icon btn-icon"
+                        name="trash-bin-outline"
+                      ></ion-icon>
+                    </button>
                   </div>
                 </div>
-                <div class="buyer-message">
-                  <div class="buyer-message-info">
+                <div class="buyer-message message">
+                  <div class="buyer-message-info message-info">
                     <img
-                      class="buyer-message-img"
+                      class="buyer-message-img message-img"
                       src="img/face_3.webp"
                       alt="Profile picture of sender"
                     />
-                    <div class="buyer-message-sender-info">
-                      <p class="buyer-message-name">Michael James</p>
-                      <p class="buyer-message-username">@mjames123</p>
+                    <div class="buyer-message-sender-info message-sender-info">
+                      <p class="buyer-message-name message-name">
+                        Michael James
+                      </p>
+                      <p class="buyer-message-username message-username">
+                        @mjames123
+                      </p>
                     </div>
-                    <p class="buyer-message-received-info">Yesterday @ 19:00</p>
+                    <p
+                      class="buyer-message-received-info message-received-info"
+                    >
+                      Yesterday @ 19:00
+                    </p>
                   </div>
-                  <div class="buyer-message-property-info">
+                  <div
+                    class="buyer-message-property-info message-property-info"
+                  >
                     <img
-                      class="buyer-message-property-img"
+                      class="buyer-message-property-img message-property-img"
                       src="img/house_4.webp"
                       alt="Image of property related to the message"
                     />
-                    <span class="buyer-message-property-address"
+                    <span
+                      class="buyer-message-property-address message-property-address"
                       >108 Moutain View House, Cardiff, Wales</span
                     >
                   </div>
-                  <div class="buyer-message-type">
-                    <span class="buyer-message-type-text">Viewing Request</span>
+                  <div class="buyer-message-type message-type">
+                    <span class="buyer-message-type-text message-type-text"
+                      >Viewing Request</span
+                    >
                     <ion-icon
-                      class="buyer-message-icon"
+                      class="buyer-message-icon message-icon"
                       name="eye-outline"
                     ></ion-icon>
                   </div>
-                  <p class="buyer-message-message">
-                    Hi!<br />I am available for a viewing tomorrow at 2:30pm if
-                    this works for you? Let me know.<br />Michael
-                  </p>
-                  <div class="buyer-message-options">
-                    <button class="buyer-message-reply-btn"></button>
-                    <button class="buyer-message-delete-btn"></button>
+                  <div
+                    class="buyer-message-message-section message-message-section"
+                  >
+                    <p class="buyer-message-message message-message">
+                      Hi!<br /><br />I am available for a viewing tomorrow at
+                      2:30pm if this works for you?<br /><br />
+                      Let me know.<br /><br />Michael
+                    </p>
+                    <div class="message-read-space new-message">
+                      <div class="message-new">
+                        <ion-icon
+                          class="message-new-icon"
+                          name="star-outline"
+                        ></ion-icon>
+                        <span class="message-new-text">New Message</span>
+                      </div>
+                      <div class="message-read">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="message-read-icon"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          stroke-width="2"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                        <span class="message-new-text">Reply Sent</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buyer-message-options message-options">
+                    <button
+                      class="buyer-message-reply-btn reply-btn options-btn"
+                    >
+                      <div class="btn-contents">
+                        <span>Reply</span
+                        ><ion-icon
+                          class="buyer-message-reply-icon btn-icon"
+                          href="#"
+                          name="mail-outline"
+                        ></ion-icon>
+                      </div>
+                    </button>
+                    <button
+                      class="buyer-message-delete-btn delete-btn options-btn"
+                    >
+                      Delete
+                      <ion-icon
+                        class="buyer-message-delete-icon btn-icon"
+                        name="trash-bin-outline"
+                      ></ion-icon>
+                    </button>
                   </div>
                 </div>
               </div>
