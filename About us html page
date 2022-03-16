@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UFT-8" />
+    <title>Home View</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <header class="main-heading">
+    <img class="header-logo" src="img/header.logo.png" alt="HomeView Logo" /> 
+    <ul class="navigation-bar">
+      <li><a class="nav-item" href="index.html">Home</a></li>
+      <li><a class="nav-item" href="buyer.html">Buy</a></li>
+      <li><a class="nav-item" href="#">Sell</a></li>
+      <li><a class="nav-item" href="#">Help</a></li>
+      <li><a class="nav-item" href="#">About Us</a></li>
+    </ul>
+    <div class="account-section">
+      <ul class="account-options">
+        <li><a class="account-option" href="#">Login</a></li>
+        <li><a class="account-option" href="#">Sign Up</a></li>
+        <img 
+        class="register-logo"
+        src="img/register.png"
+        alt="register-logo"
+        height="24"
+        width="24" />
+      </ul>
+  </header>
+
+    <header class="secondary-title">
+  <body class="body">
+      <h2>About Us</h2>
+    </header>
+
+    <article class="text">
+      <p>
+        HomeView is a Professional Property Platform. Here we will provide you
+        only interesting content, which you will like very much. We're dedicated
+        to providing you the best of houses, with a focus on dependability.
+        We're working to turn our passion for Housing into a booming company
+        where all are able to easily sell their own houses with ease. We hope
+        you enjoy our browsing through our website as well as the best housing
+        deals on the market as much as we enjoy offering them to you.
+      </p>
+
+      <p>
+        We will keep trying to make the website as user friendly as possible as
+        well as recommended you the best houses that match your search.
+      </p>
+
+      <div class="images">
+        <img
+          class="image-1"
+          src="img/Picture1.png"
+          alt="pic-1"
+          width="200"
+          height="135"
+        />
+        </div>
+
+        <img
+          class="image-2"
+          src="img/Picture2.png"
+          alt="pic-2"
+          width="190"
+          height="130"
+        />
+
+        <img
+          class="image-3"
+          src="img/Picture3.png"
+          alt="pic-3"
+          width="190"
+          height="130"
+        />
+      </div>
+    </article> 
+    
+    <div class="socials">
+      <p class="social-title">HomeView</p>
+
+      <p class="awards">Awards
+        <img 
+        class="award-pic"
+        src="img/award.png"
+        alt="award"
+        width="55"
+        height="55" />
+      </p>
+      
+      <img 
+      class="social-media"
+      src="img/facebook.jpg"
+      alt="facebook"
+      width="25"
+      height="25" />
+
+      <img 
+      class="social-media"
+      src="img/twitter.jpg"
+      alt="twitter"
+      width="25"
+      height="25" />
+
+      <img 
+      class="social-media"
+      src="img/linkdin.jpg"
+      alt="linkdin"
+      width="25"
+      height="25" />
+
+      <img 
+      class="social-media"
+      src="img/instagram.jpg"
+      alt="instagram"
+      width="25"
+      height="25" />
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content head-foot-container">
+          <div class="footer-logo-section">
+            <img class="footer-logo" src="img/header.logo.png" alt="HomeView logo" />
+            <span class="copyright">Copyright &copy; 2022 HomeView</span>
+          </div>
+          
+          <ul class="footer-nav-bar">
+            <li>
+              <a class="footer-nav-link" href="#">
+                <ion-icon name="chatbubbles-outline"></ion-icon
+                ><span>FAQs</span></a>
+            </li>
+            
+            <li>
+              <a class="footer-nav-link" href="#">
+                <ion-icon name="help-circle-outline"></ion-icon
+                ><span>About Us</span></a
+              >
+            </li>
+            
+            <li>
+              <a class="footer-nav-link" href="#">
+                <ion-icon name="mail-outline"></ion-icon
+                ><span>Contact Us</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">
+    </script>
+    </body>
+  </html>
