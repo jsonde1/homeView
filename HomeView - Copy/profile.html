@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="/css/profile.css" />
+    <title>HomeView</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="img/HomeView.png" alt="logo of HomeView" />
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="/index.html">Home</a></li>
+          <li><a class="main-nav-link" href="/buyer.html">Buy</a></li>
+          <li><a class="main-nav-link" href="/seller.html">Sell</a></li>
+          <li><a class="main-nav-link" href="#">Help</a></li>
+          <li><a class="main-nav-link" href="#">About Us</a></li>
+        </ul>
+      </nav>
+      
+      <nav class="main-nav-login">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="login.html">Login</a></li>
+          <li><a class="main-nav-link" href="signup.html">Sign Up</a></li>
+        </ul>
+
+        
+      </nav>
+    </header>
+    <section class="main-profile">
+      <div class="outer-profile-flexbox">
+        <h1>My Profile</h1>
+        <div class="design-box">
+          <div class="inner-profile-flexbox">
+            <div class="profile-input">
+
+              <div class="form">
+                <label for="displayName">Display Name:</label>
+                <input
+                  type="text"
+                  id="displayName"
+                  class="form_input"
+                  autocomplete="off"
+                  input
+                  placeholder="eg Jane Doe"
+                />
+              </div>
+              <div class="form">
+                <label for="address">Address:</label>
+                <input
+                  class="form_input"
+                  type="text"
+                  id="address"
+                  placeholder="123 Fake Street"
+                />
+              </div>
+              <div class="form">
+                <label for="postcode">Postcode:</label>
+                <input
+                  class="form_input"
+                  type="text"
+                  id="postcode"
+                  placeholder="ECV1 3SY"
+                />
+              </div>
+              <div class="form">
+                <label for="phonenumber">Phone Number:</label>
+                <input
+                  class="form_input"
+                  type="tel"
+                  id="phonenumber"
+                  placeholder="07474836423"
+                />
+              </div>
+              <div class="form">
+                <label for="email">Email:</label>
+                <input
+                  class="form_input"
+                  type="email"
+                  id="email"
+                  placeholder="janedoe@homeview.co.uk"
+                />
+              </div>
+
+              <div class="form form-updatepassword">
+                <label for="oldpass">Update Password:</label>
+                <div class="updatepassword">
+
+                  <input
+                  class="form_input"
+                  id="oldpass"
+                  type="password"
+                  placeholder="Old Password"
+                  />
+                  <input
+                  class="form_input"
+                  id="newpass"
+                  type="password"
+                  placeholder="New Password"
+                  />
+                </div>
+              </div>
+
+            </div>
+            
+            <div class="profile-img-btns">
+              <p>Profile Picture</p>
+              <img src="/img/silo.png">
+              <button class="btn update-btn" type="button">Update Profile Picture</button>
+              <button class="btn save-btn" type="button">
+                Save Changes
+              </button>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <img class="logo-footer" src="img/HomeView.png" alt="logo of HomeView" />
+      <nav class="footer-nav">
+        <ul class="main-nav-list">
+          <span class="material-icons material-icons-footer">
+            quiz
+            </span>
+          <li><a class="main-nav-link" href="#">FAQs</a></li>
+          <span class="material-icons material-icons-footer">
+            policy
+            </span>
+          <li><a class="main-nav-link" href="#">About Us</a></li>
+          <span class="material-icons material-icons-footer">
+            mark_email_unread
+            </span>
+          <li><a class="main-nav-link" href="#">Contact Us</a></li>
+        </ul>
+
+    </footer>
+  </body>
+</html>
