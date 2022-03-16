@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <script defer src="js/script.js"></script>
+    <title>Signup Page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content grid--3-cols head-foot-container">
+        <a class="header-home-link" href="index.html">
+          <img class="header-logo" src="img/logo.png" alt="HomeView Logo" />
+        </a>
+        <ul class="navigation-bar">
+          <li><a class="nav-item" href="index.html">Home</a></li>
+          <li><a class="nav-item" href="buyer.html">Buy</a></li>
+          <li><a class="nav-item" href="seller.html">Sell</a></li>
+          <li><a class="nav-item" href="#">Help</a></li>
+          <li><a class="nav-item" href="#">About Us</a></li>
+        </ul>
+        <div class="account-section">
+          <ul class="account-options">
+            <li><a class="account-option" href="login.html">Login</a></li>
+            <li><a class="account-option" href="signup.html">Sign Up</a></li>
+          </ul>
+          <img class="avatar-pic" src="img/nav-avatar.svg" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-signup">
+        <div class="container section-signup-content">
+
+          <div class="outer-login-flexbox">
+            <div class="signup-design-box">
+          <div class="inner-signup-flexbox">
+            <div class="register-gridbox">
+  
+              <div class="register-section">
+                <form action="/action_page.php">
+                  <div class="register-container">
+                    <h1 class="register-text">Register</h1>
+                    
+                    <hr>
+                    
+                    <label class="labels"for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                    
+                    <label class="labels" for="address"><b>Address</b></label>
+                    <input type="text" placeholder="Enter Address" name="address" id="address" required>
+                    
+                    <label class="labels" for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                    
+                    <label class="labels" for="Number"><b>Enter phone Number</b></label>
+                    <input type="tel" placeholder="Enter Number" name="number" id="number" required>
+                
+                    <label class="labels" for="psw-repeat"><b>Repeat Password</b></label>
+                    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+                    
+                    <label class="labels"  for="birthday">Birthday</label>
+                    <input type="date" id="birthday" name="birthday">
+                    
+                    <hr>
+                    <p class="agree-to-tos">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                
+                    <button type="submit" class="registerbtn">Register</button>
+                  </div>
+                  
+                  
+                </form>
+                
+              </div>
+              
+              
+              
+              <div class="avatar-section">
+                <img src="img/placeholder.png" alt="image place holder" class="placeholderimg">
+                <form class="formimg" action="/action_page.php">
+                  <label for="img">Select image:</label>
+                  <input type="file" id="img" name="img" accept="image/*">
+                  <input type="submit">
+                </form>
+              </div>
+              
+            </div>
+  
+          </div><!-- closing div for the gridbox -->
+          
+          
+          
+          
+        </div>
+        </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-content head-foot-container">
+        <div class="footer-logo-section">
+          <img class="footer-logo" src="img/logo.png" alt="HomeView logo" />
+          <span class="copyright">Copyright &copy; 2022 HomeView</span>
+        </div>
+        <ul class="footer-nav-bar">
+          <li>
+            <a class="footer-nav-link" href="#">
+              <ion-icon name="chatbubbles-outline"></ion-icon
+              ><span>FAQs</span></a
+            >
+          </li>
+          <li>
+            <a class="footer-nav-link" href="#">
+              <ion-icon name="help-circle-outline"></ion-icon
+              ><span>About Us</span></a
+            >
+          </li>
+          <li>
+            <a class="footer-nav-link" href="#">
+              <ion-icon name="mail-outline"></ion-icon
+              ><span>Contact Us</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
