@@ -59,10 +59,26 @@ footer {
 }
 
 /* ------------------------ */
-/* CLASSES */
+/*  HEADER SECTION */
 /* ------------------------ */
 .main-header {
   margin-bottom: 40px;
+}
+.navigation {
+  width: 100%;
+  height: 82px;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  align-items: center;
+  background-color: #033860;
+  font: 12px Helvetica;
+}
+.homeview {
+  margin-right: auto;
+}
+.header-img {
+  margin-left: auto;
 }
 .post-header {
   display: flex;
@@ -81,9 +97,6 @@ footer {
   justify-content: space-between;
   margin-left: auto;
 }
-.data {
-}
-
 .profile-box img {
   border: 3px solid white;
   border-radius: 50%;
@@ -92,17 +105,30 @@ footer {
   color: #ebf4f7;
 }
 
+.data {
+}
+
+/* ------------------------ */
+/*  RECENT PROPERTIES SECTION */
+/* ------------------------ */
 .recent-prop {
   display: flex;
   flex-direction: column;
   width: 60%;
   margin: auto;
   position: relative;
+  margin-bottom: 44px;
 }
 
-table {
-  width: 60%;
-  text-align: center;
+.property {
+  display: flex;
+  border: 2px solid #033860;
+  gap: 10px;
+}
+.property-img {
+  margin: 2px 4px;
+  height: 125px;
+  width: 150px;
 }
 
 .messages {
@@ -111,35 +137,57 @@ table {
   align-items: center;
   margin: auto;
 }
-.property {
-  display: flex;
-  border: 2px solid #033860;
-  gap: 10px;
-}
-.navigation {
-  width: 100%;
-  height: 82px;
-  display: flex;
-  justify-content: center;
-  gap: 35px;
-  align-items: center;
-  background-color: #033860;
-  font: 12px Helvetica;
-}
-.homeview {
-  margin-right: auto;
-}
-.profile-box-img {
-  margin-left: auto;
-}
 
 .webicon {
   width: 20px;
 }
 .search {
   position: absolute;
-  left: 303px;
-  top: 100px;
+  top: 25%;
+  left: 20%;
+}
+
+.recent-prop p {
+  color: black;
+  font-style: italic;
+  font-size: 14px;
+}
+/* ------------------------ */
+/*  MESSAGES SECTION */
+/* ------------------------ */
+table {
+  width: 60%;
+  text-align: center;
+}
+thead tr,
+thead tr p {
+  color: #ebf4f7;
+  background-color: #033860;
+  font-weight: 500;
+}
+tbody tr th {
+  color: #ebf4f7;
+  font-weight: 500;
+}
+
+.messages-table {
+  border: 1px solid #033860;
+  border-collapse: collapse;
+}
+
+th {
+  height: 40px;
+}
+
+tbody th:nth-child(odd) {
+  background-color: #087ca7;
+}
+
+tbody th:nth-child(even) {
+  background-color: #2189b0;
+}
+
+.property-img {
 }
 /* ------------------------ */
 /* CLASS EXTENTIONS */
@@ -158,11 +206,12 @@ table {
   font-size: 16px;
   padding: 10px;
 }
-.recent-prop p {
-  color: black;
-  font-style: italic;
-  font-size: 14px;
-}
+
 nav a {
   color: #ebf4f7;
+}
+
+table img {
+  width: 110px;
+  height: 90px;
 }
