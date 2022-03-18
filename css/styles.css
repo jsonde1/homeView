@@ -1134,3 +1134,28 @@ a {
   align-items: center;
   gap: 0.8rem;
 }
+
+/* About Us Page */
+.section-about-us {
+  padding: 2.4rem 0;
+}
+
+/* Buyer page main content */
+
+.section-about-us-content {
+  padding-bottom: 2.4rem;
+  padding-top: 1.2rem;
+}
+
+.create-listing-main {
+  padding: 1.2rem 0;
+}
+
+.about-us-header {
+  margin-bottom: 2.4rem;
+}
+
+.about-us-house {
+  width: 19rem;
+  height: 13rem;
+}
