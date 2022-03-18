@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <script defer src="js/script.js"></script>
+    <title>Buyer Page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content grid--3-cols head-foot-container">
+        <a class="header-home-link" href="index.html">
+          <img class="header-logo" src="img/logo.png" alt="HomeView Logo" />
+        </a>
+        <ul class="navigation-bar">
+          <li><a class="nav-item" href="index.html">Home</a></li>
+          <li><a class="nav-item" href="buyer.html">Buy</a></li>
+          <li><a class="nav-item" href="seller.html">Sell</a></li>
+          <li><a class="nav-item" href="#">Help</a></li>
+          <li><a class="nav-item" href="#">About Us</a></li>
+        </ul>
+        <div class="account-section">
+          <ul class="account-options">
+            <li><a class="account-option" href="#">Login</a></li>
+            <li><a class="account-option" href="#">Sign Up</a></li>
+          </ul>
+          <img class="avatar-pic" src="img/nav-avatar.svg" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section-create-listing-header">
+        <div class="create-listing-header container">
+          <h5 class="create-listing-header">Create A Listing</h5>
+        </div>
+      </section>
+      <section class="section-create-listing-main">
+        <div class="create-listing-main container">
+          <div class="create-listing-form-outer section-container">
+            <div class="create-listing-form-container">
+              <form action="" method="get" class="create-listing-form">
+                <div class="create-listing-section-1">
+                  <div class="property-name-field">
+                    <label class="form-label" for="property-name"
+                      >Property Name<em class="orng-astrx">*</em></label
+                    >
+                    <input
+                      id="property-name"
+                      class="form-field"
+                      type="text"
+                      placeholder="e.g. Westminster, London"
+                      required
+                    />
+                    <ion-icon
+                      class="form-help-icon"
+                      name="help-circle-outline"
+                    ></ion-icon>
+                  </div>
+                  <div class="guide-price-field">
+                    <label class="form-label" for="guide-price"
+                      >Guide Price<em class="orng-astrx">*</em></label
+                    >
+                    <input
+                      id="guide-price"
+                      class="form-field"
+                      type="text"
+                      placeholder="£"
+                      required
+                    />
+                    <ion-icon
+                      class="form-help-icon"
+                      name="help-circle-outline"
+                    ></ion-icon>
+                  </div>
+                  <div class="property-type-field">
+                    <label class="form-label" for="property-type"
+                      >Property Type<em class="orng-astrx">*</em></label
+                    >
+                    <select class="form-field" id="property-type" required>
+                      <option value="">Select -</option>
+                      <option value="flat-apartment">Flat/Apartment</option>
+                      <option value="terraced">Terraced</option>
+                      <option value="semi-detached">Semi-Detached</option>
+                      <option value="detached">Detached</option>
+                      <option value="bungalow">Bungalow</option>
+                      <option value="other">Other</option>
+                    </select>
+                    <ion-icon
+                      class="form-help-icon"
+                      name="help-circle-outline"
+                    ></ion-icon>
+                  </div>
+                </div>
+                <div class="description-field">
+                  <div class="description-field-label">
+                    <label class="form-label" for="description"
+                      >Description<em class="orng-astrx">*</em></label
+                    ><ion-icon
+                      class="form-help-icon"
+                      name="help-circle-outline"
+                    ></ion-icon>
+                  </div>
+                  <div class="description-field-input">
+                    <textarea
+                      class="form-field-description"
+                      id="description"
+                      placeholder="Property Description"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <label class="form-label location-section-label"
+                  >Location<em class="orng-astrx">*</em></label
+                >
+                <div class="create-listing-location-section">
+                  <label class="form-label" for="address-1"
+                    >Address Line 1</label
+                  >
+                  <input
+                    class="form-field"
+                    id="address-1"
+                    type="text"
+                    required
+                  />
+                  <label class="form-label" for="town">Town</label>
+                  <input
+                    class="town-input form-field"
+                    id="town"
+                    type="text"
+                    required
+                  />
+                  <label class="form-label" for="address-2"
+                    >Address Line 2</label
+                  >
+                  <input
+                    class="form-field"
+                    id="address-2"
+                    type="text"
+                    required
+                  />
+                  <label class="form-label" for="city">City</label>
+                  <input class="form-field" id="city" type="text" required />
+                  <label class="form-label" for="address-3"
+                    >Address Line 3</label
+                  >
+                  <input
+                    class="form-field"
+                    id="address-3"
+                    type="text"
+                    required
+                  />
+
+                  <label
+                    class="form-label location-right-label post-code-label"
+                    for="post-code"
+                    >PostCode</label
+                  >
+                  <input
+                    class="form-field"
+                    id="post-code"
+                    type="text"
+                    required
+                  />
+                </div>
+                <div class="create-listing-images-section">
+                  <label class="form-label"
+                    >Images<ion-icon
+                      class="form-help-icon"
+                      name="help-circle-outline"
+                    ></ion-icon
+                  ></label>
+                  <div class="create-listing-images-upload-box">
+                    <span>UPLOAD SECTION FOR IMAGES</span>
+                  </div>
+                </div>
+                <div class="create-listing-icon-selector">
+                  <div class="icon-selector-outer">
+                    <div class="icon-selector-main-label">
+                      <span class="icon-selector-label-text">IconSelector</span>
+                      <ion-icon
+                        class="form-help-icon"
+                        name="help-circle-outline"
+                      ></ion-icon>
+                    </div>
+                    <div class="icon-selector-inner">
+                      <div class="icon-selector-must-use-icons">
+                        <label class="form-label grey-form-label italic-label"
+                          >Must Use Icons<em class="orng-astrx">*</em></label
+                        >
+                        <div class="bedrooms-field-label label-align">
+                          <label
+                            class="form-label icon-selector-label grey-form-label label-align"
+                            for="bedrooms"
+                            ><ion-icon
+                              name="bed-outline"
+                              class="icon-selector-icon-must-use"
+                            ></ion-icon
+                            >Bedrooms</label
+                          >
+                        </div>
+                        <div class="bedrooms-field-input input-align">
+                          <input
+                            class="grey-form-label must-use-input"
+                            id="bedrooms"
+                            type="number"
+                            placeholder="1"
+                            required
+                          />
+                        </div>
+
+                        <div class="bathrooms-field-label">
+                          <label
+                            class="form-label icon-selector-label grey-form-label label-align"
+                            for="bathrooms"
+                            ><img
+                              class="icon-selector-icon grey-form-label"
+                              src="img/bathtub_dark.svg"
+                              alt="bathtub icon"
+                            />Bathrooms</label
+                          >
+                        </div>
+                        <div class="bathrooms-field-input input-align">
+                          <input
+                            class="grey-form-label must-use-input"
+                            id="bathrooms"
+                            type="number"
+                            placeholder="1"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <div class="icon-selector-optional-icons">
+                        <label class="form-label italic-label">
+                          Optional Icons - Maximum of 8 icons!
+                        </label>
+                        <div class="optional-icon-container">
+                          <div class="optional-icons-set">
+                            <label
+                              class="optional-icon-label"
+                              for="large-kitchen"
+                              ><img
+                                src="img/refrigerator_white.svg"
+                                class="optional-icon"
+                                alt="large kitchen icon"
+                              /><span class="form-label"
+                                >Large Kitchen</span
+                              ></label
+                            >
+                            <input
+                              class="optional-icons-checkbox"
+                              id="large-kitchen"
+                              type="checkbox"
+                            />
+                          </div>
+                          <div class="optional-icons-set">
+                            <label class="optional-icon-label" for="garage"
+                              ><ion-icon
+                                name="car-outline"
+                                class="optional-icon"
+                              ></ion-icon
+                              ><span class="form-label">Garage</span></label
+                            >
+                            <input
+                              class="optional-icons-checkbox"
+                              id="garage"
+                              type="checkbox"
+                            />
+                          </div>
+                          <div class="optional-icons-set">
+                            <label class="optional-icon-label" for="garden"
+                              ><ion-icon
+                                name="flower-outline"
+                                class="optional-icon"
+                              ></ion-icon
+                              ><span class="form-label">Garden</span></label
+                            >
+                            <input
+                              class="optional-icons-checkbox"
+                              id="garden"
+                              type="checkbox"
+                            />
+                          </div>
+                          <div class="optional-icons-set">
+                            <label class="optional-icon-label" for="dining-room"
+                              ><ion-icon
+                                name="fast-food-outline"
+                                class="optional-icon"
+                              ></ion-icon
+                              ><span class="form-label"
+                                >Dining Room</span
+                              ></label
+                            >
+                            <input
+                              class="optional-icons-checkbox"
+                              id="dining-room"
+                              type="checkbox"
+                            />
+                          </div>
+                          <div class="optional-icons-set">
+                            <label class="optional-icon-label" for="pool"
+                              ><img
+                                src="img/swimming_white.svg"
+                                class="optional-icon"
+                                alt="pool icon"
+                              /><span class="form-label">Pool</span></label
+                            >
+                            <input
+                              class="optional-icons-checkbox"
+                              id="pool"
+                              type="checkbox"
+                            />
+                          </div>
+                          <div class="optional-icons-set">
+                            <label
+                              class="optional-icon-label"
+                              for="on-street-parking"
+                              ><img
+                                src="img/parking_white.svg"
+                                class="optional-icon"
+                                alt="on street parking"
+                              /><span class="form-label"
+                                >On-Street Parking</span
+                              ></label
+                            >
+                            <input
+                              class="optional-icons-checkbox"
+                              id="on-street-parking"
+                              type="checkbox"
+                            />
+                          </div>
+                          <div class="optional-icons-set">
+                            <label
+                              class="optional-icon-label"
+                              for="utility-room"
+                              ><img
+                                src="img/washing_machine_white.svg"
+                                class="optional-icon"
+                                alt="utility room"
+                              /><span class="form-label"
+                                >Utility Room</span
+                              ></label
+                            >
+                            <input
+                              class="optional-icons-checkbox"
+                              id="utility-room"
+                              type="checkbox"
+                            />
+                          </div>
+                          <div class="optional-icons-set">
+                            <label class="optional-icon-label" for="game-room"
+                              ><ion-icon
+                                name="game-controller-outline"
+                                class="optional-icon"
+                              ></ion-icon
+                              ><span class="form-label">Game Room</span></label
+                            >
+                            <input
+                              class="optional-icons-checkbox"
+                              id="game-room"
+                              type="checkbox"
+                            />
+                          </div>
+                          <div class="optional-icons-set">
+                            <label class="optional-icon-label" for="study"
+                              ><ion-icon
+                                name="laptop-outline"
+                                class="optional-icon"
+                              ></ion-icon
+                              ><span class="form-label">Study</span></label
+                            >
+                            <input
+                              class="optional-icons-checkbox"
+                              id="study"
+                              type="checkbox"
+                            />
+                          </div>
+                          <div class="optional-icons-set">
+                            <label class="optional-icon-label" for="decking"
+                              ><img
+                                src="img/deck_white.svg"
+                                class="optional-icon"
+                                alt="decking icon"
+                              /><span class="form-label">Decking</span></label
+                            >
+                            <input
+                              class="optional-icons-checkbox"
+                              id="decking"
+                              type="checkbox"
+                            />
+                          </div>
+                          <div class="optional-icons-set">
+                            <label class="optional-icon-label" for="en-suite"
+                              ><img
+                                src="img/en_suite_white.svg"
+                                class="optional-icon"
+                                alt="en-suite icon"
+                              /><span class="form-label">En-Suite</span></label
+                            >
+                            <input
+                              class="optional-icons-checkbox"
+                              id="en-suite"
+                              type="checkbox"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="submit-section">
+                  <div class="submit-descriptor">
+                    <label class="form-label" for="tandc"
+                      >I agree to the
+                      <a href="#" class="site-policy-link tandclink"
+                        >Site Policy</a
+                      >
+                      and
+                      <a href="#" class="t-and-c-link tandclink"
+                        >Terms & Conditions</a
+                      ></label
+                    >
+                    <input
+                      id="tandc"
+                      type="checkbox"
+                      class="optional-icons-checkbox"
+                      required
+                    />
+                  </div>
+                  <button class="create-listing-submit reply-btn options-btn">
+                    Create!
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-content head-foot-container">
+        <div class="footer-logo-section">
+          <img class="footer-logo" src="img/logo.png" alt="HomeView logo" />
+          <span class="copyright">Copyright &copy; 2022 HomeView</span>
+        </div>
+        <ul class="footer-nav-bar">
+          <li>
+            <a class="footer-nav-link" href="#">
+              <ion-icon name="chatbubbles-outline"></ion-icon
+              ><span>FAQs</span></a
+            >
+          </li>
+          <li>
+            <a class="footer-nav-link" href="#">
+              <ion-icon name="help-circle-outline"></ion-icon
+              ><span>About Us</span></a
+            >
+          </li>
+          <li>
+            <a class="footer-nav-link" href="#">
+              <ion-icon name="mail-outline"></ion-icon
+              ><span>Contact Us</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
