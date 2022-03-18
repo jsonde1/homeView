@@ -97,6 +97,10 @@ p {
   margin: 0 auto;
 }
 
+.text-section-main {
+  padding: 0 2.4rem;
+}
+
 /* HEADER SECTION */
 
 .header {
