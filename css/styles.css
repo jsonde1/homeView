@@ -984,8 +984,54 @@ a {
   flex-grow: 1;
   justify-content: center;
   background-color: #fff;
-  height: 10rem;
+  height: 17rem;
   margin-top: 1.2rem;
+  display: grid;
+  grid-template-columns: 0.2fr 0.8fr;
+}
+
+.image-upload-btn-section {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.create-listing-image-view-section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1;
+  align-items: center;
+  overflow-x: scroll;
+  gap: 0.8rem;
+}
+
+.create-listing-image-section {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.image-upload-btn-section {
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.image-upload-info {
+  text-align: center;
+  line-height: 1.2rem;
+}
+
+.create-listing-img {
+  height: 10rem;
+  border-radius: 10px;
 }
 
 .create-listing-icon-selector {
