@@ -1,0 +1,127 @@
+.main-body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* SEARCH FIELD CARD */
+.outter-flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #033860;
+  height: 28rem;
+  width: 96rem;
+  border-radius: 10px;
+}
+
+.inner-flexbox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #033860;
+  flex-direction: column;
+  height: 26rem;
+  width: 94rem;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: #fc7753;
+}
+
+/* SEARCH FIELD */
+
+.faq-search-field {
+  width: 80%;
+  height: 3.6rem;
+  color: black;
+  border-color: #232323;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px 3px 3px 3px;
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-align: center;
+}
+/*BUTTON*/
+
+.search-faq-button {
+  width: 16rem;
+  height: 4rem;
+  background: #087ca7;
+  color: #ebf4f7;
+  border-color: #29323d;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px 10px 10px 10px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.search-faq-button,
+.search-faq-button:link,
+.search-faq-button:visited {
+  background-color: #087ca7;
+  color: #ebf4f7;
+}
+
+.search-faq-button:hover,
+.search-faq-button:active {
+  background-color: #2189b0;
+}
+
+/* CARD ICONS */
+.material-icons-faq {
+  color: #fc7753;
+  font-size: 5rem;
+}
+
+/*FAQ CARDS*/
+.options-card-holder {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  width: 96rem;
+  height: 24rem;
+  background-color: #087ca7;
+  border-radius: 5px;
+}
+
+.options-cards {
+  display: flex;
+  background: #033860;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  cursor: pointer;
+}
+
+.options-cards:hover,
+.options-cards:active {
+  background-color: #022743;
+}
+
+/* TEXT */
+
+.faq-h1 {
+  font-weight: bold;
+  color: #ebf4f7;
+  text-align: center;
+}
+
+.faq-p {
+  color: #ebf4f7;
+  font-size: 1.5rem;
+}

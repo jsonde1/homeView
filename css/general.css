@@ -87,10 +87,18 @@ p {
   margin: 0 auto;
 }
 
+.section-container {
+  margin: 0 2.4rem 0 2.4rem;
+}
+
 .head-foot-container {
   max-width: 100rem;
   padding: 0;
   margin: 0 auto;
+}
+
+.text-section-main {
+  padding: 0 2.4rem;
 }
 
 /* HEADER SECTION */
@@ -623,4 +631,22 @@ p {
 .message-new-text {
   font-size: 1.2rem;
   font-weight: 500;
+}
+
+/* forms */
+
+.form-field {
+  border-radius: 5px;
+  border: none;
+  height: 3rem;
+  font-size: 1.4rem;
+  padding: 0 0.4rem 0 0.4rem;
+}
+
+.form-field-description {
+  border-radius: 5px;
+  border: none;
+  height: 3rem;
+  font-size: 1.4rem;
+  padding: 0.4rem 0.4rem 0 0.4rem;
 }
