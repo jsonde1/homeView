@@ -203,6 +203,11 @@ label {
   justify-content: center;
   gap: 4rem;
 }
+
+.update-btn,
+.save-btn {
+  transition: all 0.3sec;
+}
 .update-btn {
   background-color: #fc7753;
   height: 4.7rem;
@@ -212,6 +217,16 @@ label {
   width: 10rem;
   height: 5rem;
   align-self: flex-end;
+}
+
+.update-btn:hover,
+.update-btn:active {
+  background-color: #e36b4b;
+}
+
+.save-btn:hover,
+.save-btn:active {
+  background-color: #077096;
 }
 /************************************/
 /*FOOTER SECTION*/
