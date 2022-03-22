@@ -4,12 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <link href="css/viewerpage.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/general.css" />
+    <script defer src="js/script.js"></script>
+
   <title>View Property</title>
   </head>
 
   <header class="main-heading">
-    <img class="header-logo" src="img/header.logo.png" alt="HomeView Logo" /> 
+    <img class="header-logo" src="img/logo.png" alt="HomeView Logo" /> 
     <ul class="navigation-bar">
       <li><a class="nav-item" href="index.html">Home</a></li>
       <li><a class="nav-item" href="buyer.html">Buy</a></li>
@@ -23,7 +27,7 @@
         <li><a class="account-option" href="#">Sign Up</a></li>
         <img 
         class="register-logo"
-        src="img/register.png"
+        src="img/nav-avatar.svg"
         alt="register-logo"
         height="24"
         width="24" />
@@ -32,16 +36,16 @@
   
   <header class="secondary-title">
     <body class="body">
-        <h2>108 Mountain View House, Cardiff, Wales</h2>
+        <h1>108 Mountain View House, Cardiff, Wales</h1>
       </header>
 
       <header class="tertiary-title">
-        <h3>Guide Price £1,360,000</h3>
+        <h2>Guide Price £1,360,000</h2>
         <a href="#" class="btn1">New</a>
         <a href="#" class="btn2">Popular <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M179.4,148A52.2,52.2,0,0,1,136,191.4" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><path d="M72,65.4C56.6,88.6,44,115.2,44,140a84,84,0,0,0,168,0c0-52-36-92-65.2-121.1h0L112,92,72,65.4Z" fill="none" stroke="#FF4500" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg></a>
   </header>
 
-  <p class="bungalow">Bungalow</p>
+  <p class="bungalow">Bungalow<p/>
 
 
   <div class="icons">
@@ -56,8 +60,8 @@
   </div>
 
 
-    <h4>Description</h4>
-    <article>
+    <p class="description">Description</p>
+    <article class="house-features">
         <p>This stunning bungalow is for outright sale and offers 4 showers, 4 bedrooms as well as a nice pool to dip into whenever you please, styled to look natural.</p>
         
         <p>This property isn't far from the great city of [?] and offers a unique experience where you can enjoy life away from all the buzz and focus on what's important.</p> 
@@ -75,13 +79,13 @@
       height="400" />
       
         <div class="container">
-      <h4>Details</h4>
+      <p class="details-title">Details</p>
       <div class="details">
         <p>Property Listed on 02/02/2022 @ 17:00<br>
           Listing Active for 7 days and 14 hours</p>
         </div>
 
-      <h4>Seller</h4>
+      <p class="seller-title">Seller</p>
 
 <div class="seller-info">
   <img 
@@ -91,7 +95,7 @@
   width="50"
   height="50" />
 
-  <p>Micheal James</p>
+  <p class="name">Micheal James</p>
 
   <a class="contact-button" href="#">Contact <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" viewBox="0 0 256 256"><rect width="24" height="24" fill="none"></rect><polyline points="224 56 128 144 32 56" fill="none" stroke="#c8630f" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><path d="M32,56H224a0,0,0,0,1,0,0V192a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V56A0,0,0,0,1,32,56Z" fill="none" stroke="#c8630f" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><line x1="110.5" y1="128" x2="34.5" y2="197.7" fill="none" stroke="#c8630f" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><line x1="221.5" y1="197.7" x2="145.5" y2="128" fill="none" stroke="#c8630f" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg></a>
 
@@ -120,33 +124,32 @@ height="175"
 <footer class="footer">
         <div class="footer-content head-foot-container">
           <div class="footer-logo-section">
-            <img class="footer-logo" src="img/header.logo.png" alt="HomeView logo" />
+            <img class="footer-logo" src="img/logo.png" alt="HomeView logo" />
             <span class="copyright">Copyright &copy; 2022 HomeView</span>
           </div>
           
           <ul class="footer-nav-bar">
             <li>
-              <a class="footer-nav-link" href="#">
+              <a class="footer-nav-link" href="#">FAQs
                 <ion-icon name="chatbubbles-outline"></ion-icon
-                ><span>FAQs</span></a>
+                ></a>
             </li>
             
             <li>
-              <a class="footer-nav-link" href="#">
+              <a class="footer-nav-link" href="#">About Us
                 <ion-icon name="help-circle-outline"></ion-icon
-                ><span>About Us</span></a
-              >
+                ></a>
             </li>
             
             <li>
-              <a class="footer-nav-link" href="#">
+              <a class="footer-nav-link" href="#">Contact Us
                 <ion-icon name="mail-outline"></ion-icon
-                ><span>Contact Us</span></a
-              >
+                ></a>
             </li>
           </ul>
         </div>
       </footer>
+    </body>
       <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
