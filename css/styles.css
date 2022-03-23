@@ -551,6 +551,10 @@
 
 /* Login Page */
 
+.section-login-header {
+  padding: 2.4rem 0;
+}
+
 .section-main-login {
   padding: 1.2rem 0;
 }
@@ -559,8 +563,6 @@
   display: flex;
   align-items: center;
   background-color: #ebf4f7;
-
-  height: 80rem;
   justify-content: center;
 }
 
@@ -690,7 +692,6 @@
 .section-signup {
   padding: 1.2rem 0;
 }
-
 
 .signup-design-box {
   display: flex;
@@ -1032,6 +1033,7 @@ a {
   margin-top: 1.2rem;
   display: grid;
   grid-template-columns: 0.2fr 0.8fr;
+  border-radius: 5px;
 }
 
 .image-upload-btn-section {
