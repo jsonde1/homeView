@@ -60,10 +60,19 @@
                       placeholder="e.g. Westminster, London"
                       required
                     />
-                    <ion-icon
-                      class="form-help-icon"
-                      name="help-circle-outline"
-                    ></ion-icon>
+                    <div
+                      class="form-help-section form-help-section-property-name"
+                    >
+                      <ion-icon
+                        class="form-help-icon form-help-icon-property-name"
+                        name="help-circle-outline"
+                      ></ion-icon>
+                      <p class="form-help-text form-help-text-property-name">
+                        The property name will be visible first to the user and
+                        will grab their attention. A shortened address works
+                        well for this section
+                      </p>
+                    </div>
                   </div>
                   <div class="guide-price-field">
                     <label class="form-label" for="guide-price"
@@ -76,10 +85,19 @@
                       placeholder="£"
                       required
                     />
-                    <ion-icon
-                      class="form-help-icon"
-                      name="help-circle-outline"
-                    ></ion-icon>
+                    <div
+                      class="form-help-section form-help-section-guide-price"
+                    >
+                      <ion-icon
+                        class="form-help-icon form-help-icon-guide-price"
+                        name="help-circle-outline"
+                      ></ion-icon>
+                      <p class="form-help-text form-help-text-guide-price">
+                        The guide price for your property should be determined
+                        carefully. Use our help guides if you are unsure about
+                        this section
+                      </p>
+                    </div>
                   </div>
                   <div class="property-type-field">
                     <label class="form-label" for="property-type"
@@ -94,20 +112,38 @@
                       <option value="bungalow">Bungalow</option>
                       <option value="other">Other</option>
                     </select>
-                    <ion-icon
-                      class="form-help-icon"
-                      name="help-circle-outline"
-                    ></ion-icon>
+                    <div
+                      class="form-help-section form-help-section-property-type"
+                    >
+                      <ion-icon
+                        class="form-help-icon form-help-icon-property-type"
+                        name="help-circle-outline"
+                      ></ion-icon>
+                      <p class="form-help-text form-help-text-property-type">
+                        Select the most appropriate property type for the
+                        property you are listing. If you can't choose a type,
+                        pick Other
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <div class="description-field">
                   <div class="description-field-label">
                     <label class="form-label" for="description"
                       >Description<em class="orng-astrx">*</em></label
-                    ><ion-icon
-                      class="form-help-icon"
-                      name="help-circle-outline"
-                    ></ion-icon>
+                    >
+                    <div
+                      class="form-help-section form-help-section-description"
+                    >
+                      <ion-icon
+                        class="form-help-icon form-help-icon-description"
+                        name="help-circle-outline"
+                      ></ion-icon>
+                      <p class="form-help-text form-help-text-description">
+                        Produce a detailed and comprehensive description of your
+                        properties features. Highlight the key selling points
+                      </p>
+                    </div>
                   </div>
                   <div class="description-field-input">
                     <textarea
@@ -172,119 +208,91 @@
                   />
                 </div>
                 <div class="create-listing-images-section">
-                  <label class="form-label"
-                    >Images<ion-icon
-                      class="form-help-icon"
-                      name="help-circle-outline"
-                    ></ion-icon
-                  ></label>
+                  <label class="form-label">
+                    Images
+                    <div class="form-help-section form-help-section-images">
+                      <ion-icon
+                        class="form-help-icon form-help-icon-images"
+                        name="help-circle-outline"
+                      ></ion-icon>
+                      <p class="form-help-text form-help-text-images">
+                        Upload images so buyers can view your property. Ensure
+                        to upload exterior and interior photos
+                      </p>
+                    </div>
+                  </label>
                   <div class="create-listing-images-upload-box">
                     <div class="image-upload-btn-section">
-                      <button class="cta-btn major-btn" href="#">
-                        <div class="btn-contents">
-                          <span>Upload</span>
-                          <ion-icon
-                            class="cta-btn-icon"
-                            name="cloud-upload-outline"
-                          ></ion-icon>
-                        </div>
-                      </button>
+                      <!-- <button class="cta-btn major-btn" href="#"> -->
+                      <label
+                        for="create-listing-img-upload"
+                        class="cta-btn major-btn"
+                      >
+                        Upload<ion-icon name="cloud-upload-outline"></ion-icon>
+                      </label>
+                      <input id="create-listing-img-upload" type="file" />
                       <p class="image-upload-info">
                         Maximum file size<br />25mb<br />Supported file
                         types:<br />.JPEG, .JPG, .PNG
                       </p>
                     </div>
                     <div class="create-listing-image-view-section">
-                      <div
-                        class="create-listing-image-1-section create-listing-image-section"
+                      <img
+                        class="create-listing-img create-listing-img-1"
+                        src="img/house_4.webp"
+                        alt="your first uploaded property image"
+                      />
+                      <button
+                        class="buyer-message-delete-btn delete-btn options-btn create-listing-img-delete-btn-1"
                       >
-                        <img
-                          class="create-listing-img"
-                          src="img/house_4.webp"
-                          alt="your first uploaded property image"
-                        />
-                        <button
-                          class="buyer-message-delete-btn delete-btn options-btn create-listing-img-delete-button"
-                        >
-                          Delete
-                          <ion-icon
-                            class="buyer-message-delete-icon btn-icon"
-                            name="trash-bin-outline"
-                          ></ion-icon>
-                        </button>
-                      </div>
-                      <div
-                        class="create-listing-image-1-section create-listing-image-section"
+                        Delete
+                        <ion-icon
+                          class="buyer-message-delete-icon btn-icon"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                      </button>
+                      <img
+                        class="create-listing-img create-listing-img-2"
+                        src="img/house_4.webp"
+                        alt="your first uploaded property image"
+                      />
+                      <button
+                        class="buyer-message-delete-btn delete-btn options-btn create-listing-img-delete-btn-2"
                       >
-                        <img
-                          class="create-listing-img"
-                          src="img/house_4.webp"
-                          alt="your first uploaded property image"
-                        />
-                        <button
-                          class="buyer-message-delete-btn delete-btn options-btn create-listing-img-delete-button"
-                        >
-                          Delete
-                          <ion-icon
-                            class="buyer-message-delete-icon btn-icon"
-                            name="trash-bin-outline"
-                          ></ion-icon>
-                        </button>
-                      </div>
-                      <div
-                        class="create-listing-image-1-section create-listing-image-section"
+                        Delete
+                        <ion-icon
+                          class="buyer-message-delete-icon btn-icon"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                      </button>
+                      <img
+                        class="create-listing-img create-listing-img-3"
+                        src="img/house_4.webp"
+                        alt="your first uploaded property image"
+                      />
+                      <button
+                        class="buyer-message-delete-btn delete-btn options-btn create-listing-img-delete-btn-3"
                       >
-                        <img
-                          class="create-listing-img"
-                          src="img/house_4.webp"
-                          alt="your first uploaded property image"
-                        />
-                        <button
-                          class="buyer-message-delete-btn delete-btn options-btn create-listing-img-delete-button"
-                        >
-                          Delete
-                          <ion-icon
-                            class="buyer-message-delete-icon btn-icon"
-                            name="trash-bin-outline"
-                          ></ion-icon>
-                        </button>
-                      </div>
-                      <div
-                        class="create-listing-image-1-section create-listing-image-section"
+                        Delete
+                        <ion-icon
+                          class="buyer-message-delete-icon btn-icon"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                      </button>
+                      <img
+                        class="create-listing-img create-listing-img-4"
+                        src="img/house_4.webp"
+                        alt="your first uploaded property image"
+                      />
+                      <button
+                        class="buyer-message-delete-btn delete-btn options-btn create-listing-img-delete-btn-4"
                       >
-                        <img
-                          class="create-listing-img"
-                          src="img/house_4.webp"
-                          alt="your first uploaded property image"
-                        />
-                        <button
-                          class="buyer-message-delete-btn delete-btn options-btn create-listing-img-delete-button"
-                        >
-                          Delete
-                          <ion-icon
-                            class="buyer-message-delete-icon btn-icon"
-                            name="trash-bin-outline"
-                          ></ion-icon>
-                        </button>
-                      </div>
-                      <div
-                        class="create-listing-image-1-section create-listing-image-section"
-                      >
-                        <img
-                          class="create-listing-img"
-                          src="img/house_4.webp"
-                          alt="your first uploaded property image"
-                        />
-                        <button
-                          class="buyer-message-delete-btn delete-btn options-btn create-listing-img-delete-button"
-                        >
-                          Delete
-                          <ion-icon
-                            class="buyer-message-delete-icon btn-icon"
-                            name="trash-bin-outline"
-                          ></ion-icon>
-                        </button>
-                      </div>
+                        Delete
+                        <ion-icon
+                          class="buyer-message-delete-icon btn-icon"
+                          name="trash-bin-outline"
+                        ></ion-icon>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -292,10 +300,17 @@
                   <div class="icon-selector-outer">
                     <div class="icon-selector-main-label">
                       <span class="icon-selector-label-text">IconSelector</span>
-                      <ion-icon
-                        class="form-help-icon"
-                        name="help-circle-outline"
-                      ></ion-icon>
+                      <div class="form-help-section form-help-section-icons">
+                        <ion-icon
+                          class="form-help-icon form-help-icon-icons"
+                          name="help-circle-outline"
+                        ></ion-icon>
+                        <p class="form-help-text form-help-text-icons">
+                          Icons allow buyers to quickly view a properties key
+                          features. Choose the most appropriate icons for your
+                          property
+                        </p>
+                      </div>
                     </div>
                     <div class="icon-selector-inner">
                       <div class="icon-selector-must-use-icons">

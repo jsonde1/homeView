@@ -874,6 +874,43 @@ a {
   height: 2rem;
 }
 
+.form-help-section-property-name,
+.form-help-section-guide-price,
+.form-help-section-property-type,
+.form-help-section-description,
+.form-help-section-images,
+.form-help-section-icons {
+  position: relative;
+}
+
+.form-help-text {
+  display: none;
+  z-index: 1000;
+}
+
+.form-help-section-property-name:hover .form-help-text-property-name,
+.form-help-section-guide-price:hover .form-help-text-guide-price,
+.form-help-section-property-type:hover .form-help-text-property-type,
+.form-help-section-description:hover .form-help-text-description,
+.form-help-section-images:hover .form-help-text-images,
+.form-help-section-icons:hover .form-help-text-icons {
+  position: absolute;
+  top: -11rem;
+  left: 0;
+  transform: translate(-50%, -15%);
+  display: block;
+  border-radius: 10px;
+  font-style: italic;
+  padding: 1.2rem 1.6rem;
+  color: #ebf4f7;
+  font-size: 1.3rem;
+  text-align: center;
+  width: 18rem;
+  height: 11rem;
+  line-height: 1.4rem;
+  background-color: #087ca7;
+}
+
 .create-listing-form-container {
   padding: 2.4rem;
   border: solid 2px #fc7753;
@@ -999,20 +1036,17 @@ a {
   gap: 1.2rem;
 }
 
+input[type="file"] {
+  display: none;
+}
+
 .create-listing-image-view-section {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1;
-  align-items: center;
-  overflow-x: scroll;
-  gap: 0.8rem;
-}
-
-.create-listing-image-section {
-  display: flex;
-  flex-direction: column;
+  grid-template-rows: 0.7fr 0.3fr;
   justify-items: center;
   align-items: center;
+  overflow-x: scroll;
   gap: 0.8rem;
 }
 
@@ -1032,6 +1066,34 @@ a {
 .create-listing-img {
   height: 10rem;
   border-radius: 10px;
+  grid-row: 1;
+}
+
+.create-listing-img-delete-btn-1,
+.create-listing-img-delete-btn-2,
+.create-listing-img-delete-btn-3,
+.create-listing-img-delete-btn-4 {
+  grid-row: 2;
+}
+
+.create-listing-img-1,
+.create-listing-img-delete-btn-1 {
+  grid-column: 1;
+}
+
+.create-listing-img-2,
+.create-listing-img-delete-btn-2 {
+  grid-column: 2;
+}
+
+.create-listing-img-3,
+.create-listing-img-delete-btn-3 {
+  grid-column: 3;
+}
+
+.create-listing-img-4,
+.create-listing-img-delete-btn-4 {
+  grid-column: 4;
 }
 
 .create-listing-icon-selector {
