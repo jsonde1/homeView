@@ -849,7 +849,7 @@ a {
   padding: 2.4rem 0;
 }
 
-/* Buyer page main content */
+/* create listing main content */
 
 .section-create-listing-main {
   padding-bottom: 2.4rem;
@@ -1248,7 +1248,7 @@ input[type="file"] {
   padding: 2.4rem 0;
 }
 
-/* Buyer page main content */
+/* about us page main content */
 
 .section-about-us-content {
   padding-bottom: 2.4rem;
@@ -1331,4 +1331,47 @@ input[type="file"] {
 
 .about-us-socials-awards-img {
   height: 9rem;
+}
+
+/* CONTACT SELLER PAGE */
+
+/* contact seller header */
+
+.section-contact-seller-header {
+  padding: 2.4rem 0;
+}
+
+/* contact seller main content */
+
+.section-contact-seller-main {
+  padding: 1.2rem 0;
+}
+
+/* .contact-seller-main-content-container {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1fr auto auto;
+  margin: 0 2.4rem 4.2rem 2.4rem;
+  gap: 2.4rem;
+} */
+
+.contact-seller-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message-info-section {
+  display: grid;
+  grid-template-columns: 0.3fr 0.7fr;
+}
+
+.message-account-container {
+  justify-self: center;
+}
+
+.message-property-name,
+.message-property-listing-date,
+.message-property-listing-duration {
+  color: #ebf4f7;
 }
