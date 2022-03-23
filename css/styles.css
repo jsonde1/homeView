@@ -709,7 +709,7 @@
   justify-content: space-evenly;
   align-items: center;
   background-color: #033860;
-  height: 70rem;
+  height: 75rem;
   width: 90rem;
   border-radius: 10px;
   border-style: solid;
@@ -776,23 +776,32 @@ hr {
 
 /* Set a style for the submit button */
 .registerbtn {
-  width: 111px;
-  height: 44px;
-  padding: 12px 10px 10px 10px;
-  background: #fc7753;
-  color: #ffffff;
-  border-color: #357ebd;
+  width: 16rem;
+  height: 4rem;
+  background: #087ca7;
+  color: #ebf4f7;
+  border-color: #29323d;
   border-width: 1px;
   border-style: solid;
-  border-radius: 11px 11px 11px 11px;
-
+  border-radius: 10px 10px 10px 10px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.6rem;
+  line-height: 1;
   text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
-.registerbtn:hover {
-  opacity: 1;
+.registerbtn,
+.registerbtn:link,
+.registerbtn:visited {
+  background-color: #087ca7;
+  color: #ebf4f7;
+}
+
+.registerbtn:hover,
+.registerbtn:active {
+  background-color: #2189b0;
 }
 
 /* Add a blue text color to links */
