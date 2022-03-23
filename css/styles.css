@@ -1364,14 +1364,56 @@ input[type="file"] {
 .message-info-section {
   display: grid;
   grid-template-columns: 0.3fr 0.7fr;
+  margin-bottom: 1.4rem;
+}
+
+.message-info-img {
+  height: 15rem;
 }
 
 .message-account-container {
   justify-self: center;
+  align-self: center;
+  align-items: center;
+  height: 50%;
+  gap: 1.2rem;
+  padding: 1.2rem 1.6rem;
 }
 
 .message-property-name,
 .message-property-listing-date,
 .message-property-listing-duration {
   color: #ebf4f7;
+}
+
+.message-seller-field {
+  margin-bottom: 1.4rem;
+}
+
+.message-seller-field-label {
+  margin-bottom: 1.2rem;
+}
+
+.message-seller-message-field {
+  display: flex;
+}
+
+.message-seller-message-field-input textarea {
+  resize: none;
+  font-family: "Inter", sans-serif;
+  flex-grow: 1;
+  height: 15rem;
+  width: 100%;
+}
+
+.message-seller-bottom-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.message-type-field {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
 }

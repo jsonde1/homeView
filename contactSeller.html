@@ -73,7 +73,7 @@
                 <div class="recently-viewed-property property-1">
                   <a href="#">
                     <img
-                      class="recently-viewed-img"
+                      class="message-info-img"
                       src="img/house_4.webp"
                       alt="108 Mountain View House, Cardiff, Wales"
                     />
@@ -97,6 +97,37 @@
                   </div>
                 </div>
               </div>
+              <form action="" method="get" class="message-seller-form">
+                <div class="message-seller-field">
+                  <div class="message-seller-field-label">
+                    <label class="form-label" for="message-seller-message"
+                      >Message</label
+                    >
+                  </div>
+                  <div class="message-seller-message-field-input">
+                    <textarea
+                      class="message-seller-message-field form-field-description"
+                      id="message-seller-message"
+                      placeholder="Write your message here"
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="message-seller-bottom-section">
+                  <div class="message-type-field">
+                    <label class="form-label" for="message-type"
+                      >Message Type</label
+                    >
+                    <select class="form-field" id="message-type" required>
+                      <option value="">Select -</option>
+                      <option value="offer">Offer</option>
+                      <option value="viewing-request">Viewing Request</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div class="message-send-btn">Send</div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
