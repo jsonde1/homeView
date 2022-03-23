@@ -1374,6 +1374,7 @@ input[type="file"] {
   display: grid;
   grid-template-columns: 0.3fr 0.7fr;
   margin-bottom: 1.4rem;
+  gap: 1.2rem;
 }
 
 .message-info-img {
@@ -1385,6 +1386,7 @@ input[type="file"] {
   align-self: center;
   align-items: center;
   height: 50%;
+  width: 100%;
   gap: 1.2rem;
   padding: 1.2rem 1.6rem;
 }
@@ -1393,6 +1395,23 @@ input[type="file"] {
 .message-property-listing-date,
 .message-property-listing-duration {
   color: #ebf4f7;
+}
+
+.message-reply-true .message-seller-original-msg-label {
+  margin-bottom: 1.2rem;
+}
+
+.message-reply-true .message-seller-original-message {
+  margin-bottom: 1.4rem;
+}
+
+.message-reply-true .message-seller-original-message textarea {
+  cursor: default;
+  font-style: italic;
+}
+
+.message-reply-false {
+  display: none;
 }
 
 .message-seller-field {
@@ -1425,4 +1444,60 @@ input[type="file"] {
   display: flex;
   gap: 1.2rem;
   align-items: center;
+}
+
+/* CONTACT BUYER PAGE */
+
+/* contact buyer header */
+
+.section-contact-buyer-header {
+  padding: 2.4rem 0;
+}
+
+/* contact buyer main content */
+
+.section-contact-buyer-main {
+  padding: 1.2rem 0;
+}
+.contact-buyer-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.message-reply-true .message-buyer-original-msg-label {
+  margin-bottom: 1.2rem;
+}
+
+.message-reply-true .message-buyer-original-message {
+  margin-bottom: 1.4rem;
+}
+
+.message-reply-true .message-buyer-original-message textarea {
+  cursor: default;
+  font-style: italic;
+}
+.message-buyer-field {
+  margin-bottom: 1.4rem;
+}
+
+.message-buyer-field-label {
+  margin-bottom: 1.2rem;
+}
+
+.message-buyer-message-field {
+  display: flex;
+}
+
+.message-buyer-message-field-input textarea {
+  resize: none;
+  font-family: "Inter", sans-serif;
+  flex-grow: 1;
+  height: 15rem;
+  width: 100%;
+}
+
+.message-buyer-bottom-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
