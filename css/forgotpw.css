@@ -1,0 +1,87 @@
+.main-body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.outter-flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #033860;
+  height: 40rem;
+  width: 90rem;
+  border-radius: 5px;
+}
+
+.inner-flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #033860;
+  flex-direction: column;
+  height: 38rem;
+  width: 88rem;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: #fc7753;
+}
+
+.forgotpw_text {
+  font-weight: bold;
+  color: #ebf4f7;
+  text-align: center;
+  font-size: x-large;
+  margin-bottom: 4.8rem;
+}
+
+.form_input_forgot_pw {
+  display: inline-block;
+  width: 60rem;
+  height: 3.6rem;
+  padding: 4px 8px 4px 8px;
+  margin: 5px 0 22px 0;
+  color: black;
+  border-color: #232323;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px 3px 3px 3px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.forgot_pw_button {
+  width: 16rem;
+  height: 4rem;
+  background: #087ca7;
+  color: #ebf4f7;
+  border-color: #29323d;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px 10px 10px 10px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.forgot_pw_button,
+.forgot_pw_button:link,
+.forgot_pw_button:visited {
+  background-color: #087ca7;
+  color: #ebf4f7;
+}
+
+.forgot_pw_button:hover,
+.forgot_pw_button:active {
+  background-color: #2189b0;
+}
