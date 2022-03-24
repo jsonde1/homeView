@@ -180,6 +180,10 @@ article {
   /* box-shadow: 1px 1px 10px; */
 }
 
+.house-features {
+  margin-top: 20px;
+}
+
 /* NEW */
 .details-title {
   font-size: 20px;
@@ -279,6 +283,7 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 180px;
 }
 
 .footer-logo {
