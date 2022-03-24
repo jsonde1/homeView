@@ -41,6 +41,7 @@ html {
   font-family: "Inter", sans-serif;
   line-height: 1;
   font-weight: 400;
+  overflow-y: scroll;
 }
 
 main {
@@ -418,13 +419,22 @@ p {
 
 /* Re-useable account box */
 
-.account-container {
-  justify-self: right;
+.account-container,
+.account-container-no-btn {
   background-color: #087ca7;
   padding: 0.8rem 1.6rem;
   border-radius: 1rem;
   display: grid;
   grid-template-columns: auto 1fr 1fr;
+}
+
+.account-container {
+  grid-template-columns: auto 1fr 1fr;
+  justify-self: right;
+}
+
+.account-container-no-btn {
+  grid-template-columns: auto 1fr;
 }
 
 .account-details {

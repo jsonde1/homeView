@@ -551,6 +551,10 @@
 
 /* Login Page */
 
+.section-login-header {
+  padding: 2.4rem 0;
+}
+
 .section-main-login {
   padding: 1.2rem 0;
 }
@@ -559,8 +563,6 @@
   display: flex;
   align-items: center;
   background-color: #ebf4f7;
-
-  height: 80rem;
   justify-content: center;
 }
 
@@ -696,22 +698,19 @@
   align-items: center;
   justify-content: center;
   background-color: #033860;
-  height: 73rem;
-  width: 93rem;
-  border-radius: 10px;
+  height: 76rem;
+  width: 91rem;
+  border-radius: 5px;
 }
 
 .inner-signup-flexbox {
-  /*display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat();*/
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background-color: #033860;
-  height: 70rem;
+  height: 75rem;
   width: 90rem;
-  border-radius: 10px;
+  border-radius: 5px;
   border-style: solid;
   border-color: #fc7753;
 }
@@ -776,23 +775,32 @@ hr {
 
 /* Set a style for the submit button */
 .registerbtn {
-  width: 111px;
-  height: 44px;
-  padding: 12px 10px 10px 10px;
-  background: #fc7753;
-  color: #ffffff;
-  border-color: #357ebd;
+  width: 16rem;
+  height: 4rem;
+  background: #087ca7;
+  color: #ebf4f7;
+  border-color: #29323d;
   border-width: 1px;
   border-style: solid;
-  border-radius: 11px 11px 11px 11px;
-
+  border-radius: 10px 10px 10px 10px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 1.6rem;
+  line-height: 1;
   text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
-.registerbtn:hover {
-  opacity: 1;
+.registerbtn,
+.registerbtn:link,
+.registerbtn:visited {
+  background-color: #087ca7;
+  color: #ebf4f7;
+}
+
+.registerbtn:hover,
+.registerbtn:active {
+  background-color: #2189b0;
 }
 
 /* Add a blue text color to links */
@@ -849,7 +857,7 @@ a {
   padding: 2.4rem 0;
 }
 
-/* Buyer page main content */
+/* create listing main content */
 
 .section-create-listing-main {
   padding-bottom: 2.4rem;
@@ -1025,6 +1033,7 @@ a {
   margin-top: 1.2rem;
   display: grid;
   grid-template-columns: 0.2fr 0.8fr;
+  border-radius: 5px;
 }
 
 .image-upload-btn-section {
@@ -1248,7 +1257,7 @@ input[type="file"] {
   padding: 2.4rem 0;
 }
 
-/* Buyer page main content */
+/* about us page main content */
 
 .section-about-us-content {
   padding-bottom: 2.4rem;
@@ -1331,4 +1340,164 @@ input[type="file"] {
 
 .about-us-socials-awards-img {
   height: 9rem;
+}
+
+/* CONTACT SELLER PAGE */
+
+/* contact seller header */
+
+.section-contact-seller-header {
+  padding: 2.4rem 0;
+}
+
+/* contact seller main content */
+
+.section-contact-seller-main {
+  padding: 1.2rem 0;
+}
+
+/* .contact-seller-main-content-container {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 1fr auto auto;
+  margin: 0 2.4rem 4.2rem 2.4rem;
+  gap: 2.4rem;
+} */
+
+.contact-seller-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message-info-section {
+  display: grid;
+  grid-template-columns: 0.3fr 0.7fr;
+  margin-bottom: 1.4rem;
+  gap: 1.2rem;
+}
+
+.message-info-img {
+  height: 15rem;
+}
+
+.message-account-container {
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  gap: 1.2rem;
+  padding: 1.2rem 1.6rem;
+}
+
+.message-property-name,
+.message-property-listing-date,
+.message-property-listing-duration {
+  color: #ebf4f7;
+}
+
+.message-reply-true .message-seller-original-msg-label {
+  margin-bottom: 1.2rem;
+}
+
+.message-reply-true .message-seller-original-message {
+  margin-bottom: 1.4rem;
+}
+
+.message-reply-true .message-seller-original-message textarea {
+  cursor: default;
+  font-style: italic;
+}
+
+.message-reply-false {
+  display: none;
+}
+
+.message-seller-field {
+  margin-bottom: 1.4rem;
+}
+
+.message-seller-field-label {
+  margin-bottom: 1.2rem;
+}
+
+.message-seller-message-field {
+  display: flex;
+}
+
+.message-seller-message-field-input textarea {
+  resize: none;
+  font-family: "Inter", sans-serif;
+  flex-grow: 1;
+  height: 15rem;
+  width: 100%;
+}
+
+.message-seller-bottom-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.message-type-field {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+/* CONTACT BUYER PAGE */
+
+/* contact buyer header */
+
+.section-contact-buyer-header {
+  padding: 2.4rem 0;
+}
+
+/* contact buyer main content */
+
+.section-contact-buyer-main {
+  padding: 1.2rem 0;
+}
+.contact-buyer-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.message-reply-true .message-buyer-original-msg-label {
+  margin-bottom: 1.2rem;
+}
+
+.message-reply-true .message-buyer-original-message {
+  margin-bottom: 1.4rem;
+}
+
+.message-reply-true .message-buyer-original-message textarea {
+  cursor: default;
+  font-style: italic;
+}
+.message-buyer-field {
+  margin-bottom: 1.4rem;
+}
+
+.message-buyer-field-label {
+  margin-bottom: 1.2rem;
+}
+
+.message-buyer-message-field {
+  display: flex;
+}
+
+.message-buyer-message-field-input textarea {
+  resize: none;
+  font-family: "Inter", sans-serif;
+  flex-grow: 1;
+  height: 15rem;
+  width: 100%;
+}
+
+.message-buyer-bottom-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
