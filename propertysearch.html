@@ -101,15 +101,16 @@
                 <label for="min-beds">Min beds:</label>
                 <select name="min-beds" id="min-beds">
                   <option value="any">any</option>
-                  <option value="flats">Flats</option>
-                  <option value="detached">Detached</option>
-                  <option value="semi-detached">Semi-detached</option>
-                  <option value="terraced">Teerraced</option>
-                  <option value="Bungalow">Bungalow</option>
-                  <option value="2m">£1m-£2m</option>
-                  <option value="5m">£2m-£5m</option>
-                  <option value="10m">£5m-£10m</option>
-                  <option value="10m+">£10m+</option>
+                  <option value="1">1 bed</option>
+                  <option value="2">2 bed</option>
+                  <option value="3">3 bed</option>
+                  <option value="4">4 bed</option>
+                  <option value="5">5 bed</option>
+                  <option value="6">6 bed</option>
+                  <option value="7">7 bed</option>
+                  <option value="8">8 bed</option>
+                  <option value="9">9 bed</option>
+                  <option value="10+">10+ bed</option>
                 </select>
               </div>
 
@@ -117,15 +118,16 @@
                 <label for="max-beds">Max beds:</label>
                 <select name="max-beds" id="max-beds">
                   <option value="any">any</option>
-                  <option value="flats">Flats</option>
-                  <option value="detached">Detached</option>
-                  <option value="semi-detached">Semi-detached</option>
-                  <option value="terraced">Teerraced</option>
-                  <option value="Bungalow">Bungalow</option>
-                  <option value="2m">£1m-£2m</option>
-                  <option value="5m">£2m-£5m</option>
-                  <option value="10m">£5m-£10m</option>
-                  <option value="10m+">£10m+</option>
+                  <option value="1">1 bed</option>
+                  <option value="2">2 bed</option>
+                  <option value="3">3 bed</option>
+                  <option value="4">4 bed</option>
+                  <option value="5">5 bed</option>
+                  <option value="6">6 bed</option>
+                  <option value="7">7 bed</option>
+                  <option value="8">8 bed</option>
+                  <option value="9">9 bed</option>
+                  <option value="10+">10+ bed</option>
                 </select>
               </div>
             </div>
@@ -137,9 +139,6 @@
                   <option value="price-up">Price Ascending</option>
                   <option value="price-down">Price Descending</option>
                   <option value="proximity">Proximity</option>
-                  <option value="terraced">Teerraced</option>
-                  <option value="Bungalow">Bungalow</option>
-                  <option value="2m">£1m-£2m</option>
                 </select>
               </div>
               <div class="form">
@@ -153,15 +152,24 @@
               </div>
 
               <button class="btn search-btn" type="button">
-                Search <ion-icon name="search-outline"></ion-icon>
+                Search
+                <ion-icon
+                  class="btn-icon-search"
+                  name="search-outline"
+                ></ion-icon>
               </button>
               <button class="btn clear-btn" type="button">
-                Clear<ion-icon name="trash-bin-outline"></ion-icon>
+                Clear<ion-icon
+                  class="btn-icon-search"
+                  name="trash-bin-outline"
+                ></ion-icon>
               </button>
             </div>
           </div>
         </div>
-        <p class="results-text">Your Property Search Returned One Result</p>
+        <p class="results-text">
+          Your Property Search Returned <span>Three</span> Results
+        </p>
         <div class="carousel">
           <button class="carousel-btn left-btn">
             <ion-icon
