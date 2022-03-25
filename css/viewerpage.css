@@ -229,7 +229,7 @@ article {
   color: #fff;
   border-radius: 10px;
   /* margin-left: 200px; */
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   padding: 10px 20px;
   width: 30%;
   height: 60px;
@@ -283,11 +283,11 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 180px;
+  /* margin-right: 180px; */
 }
 
 .footer-logo {
-  margin-right: 220px;
+  margin-right: 350px;
 }
 
 .footer-content {
@@ -327,7 +327,7 @@ article {
   display: flex-end;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
 }
 
 .footer-nav-bar li a:link,
@@ -344,5 +344,5 @@ article {
 
 .copyright {
   font-size: 10px;
-  margin-right: 270px;
+  margin-right: 350px;
 }
