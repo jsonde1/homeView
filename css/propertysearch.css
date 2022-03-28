@@ -200,8 +200,8 @@ label {
   margin: 0 auto;
   width: 50%;
   display: grid;
-  grid-template-columns: 0.05fr 0.3fr 0.3fr 0.3fr 0.05fr;
-  gap: 0.8rem;
+  grid-template-columns: repeat(4, 0.25fr);
+  gap: 1.6rem;
 }
 
 .carousel-btn {
