@@ -38,70 +38,247 @@
       </div>
     </header>
     <main>
-      <section class="section-signup">
-        <div class="container section-signup-content">
-
-          <div class="outer-login-flexbox">
-            <div class="signup-design-box">
-          <div class="inner-signup-flexbox">
-            <div class="register-gridbox">
-  
-              <div class="register-section">
-                <form action="/action_page.php">
-                  <div class="register-container">
-                    <h1 class="register-text">Register</h1>
-                    
-                    <hr>
-                    
-                    <label class="labels"for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Email" name="email" class="form_input" id="email" required>
-                    
-                    <label class="labels" for="address"><b>Address</b></label>
-                    <input type="text" placeholder="Enter Address" name="address" class="form_input" id="address" required>
-                    
-                    <label class="labels" for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" class="form_input" id="psw" required>
-                    
-                    <label class="labels" for="Number"><b>Enter phone Number</b></label>
-                    <input type="tel" placeholder="Enter Number" name="number" class="form_input" id="number" required>
-                
-                    <label class="labels" for="psw-repeat"><b>Repeat Password</b></label>
-                    <input type="password" placeholder="Repeat Password" name="psw-repeat" class="form_input" id="psw-repeat" required>
-                    
-                    <label class="labels"  for="birthday">Birthday</label>
-                    <input type="date" id="birthday" name="birthday" class="form_input">
-                    
-                    <hr>
-                    <p class="agree-to-tos">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-                
-                    <button type="submit" class="registerbtn">Register</button>
-                  </div>
-                  
-                  
-                </form>
-                
-              </div>
-              
-              
-              
-              <div class="avatar-section">
-                <img src="img/placeholder.png" alt="image place holder" class="placeholderimg">
-                <form class="formimg" action="/action_page.php">
-                  <label for="img">Select image:</label>
-                  <input type="file" id="img" name="img" accept="image/*">
-                  <input type="submit">
-                </form>
-              </div>
-              
-            </div>
-  
-          </div><!-- closing div for the gridbox -->
-          
-          
-          
-          
+      <section class="section-signup-header">
+        <div class="signup-header container">
+          <h5 class="signup-header">Create An Account</h5>
         </div>
-        </section>
+      </section>
+      <section class="section-signup">
+        <div class="container section-main-login-content">
+          <div class="create-listing-form-outer section-container">
+            <div class="create-listing-form-container">
+              <form action="" method="get" class="create-listing-form">
+                <div class="signup-form-section-1">
+                  <div class="first-name-field label-align">
+                    <label class="form-label" for="first-name"
+                      >First Name</label
+                    >
+                    <input
+                      id="first-name"
+                      class="form-field"
+                      type="text"
+                      placeholder="John"
+                      required
+                    />
+                  </div>
+                  <div class="last-name-field label-align">
+                    <label class="form-label" for="last-name">Last Name</label>
+                    <input
+                      id="last-name"
+                      class="form-field"
+                      type="text"
+                      placeholder="Smith"
+                      required
+                    />
+                  </div>
+                  <div class="dob-field label-align">
+                    <label class="form-label" for="dob">Date of Birth</label>
+                    <input
+                      id="dob"
+                      class="form-field dob-field-input"
+                      type="date"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="signup-password-section">
+                  <div class="password-field label-align">
+                    <label class="form-label" for="password">Password</label>
+                    <input
+                      id="password"
+                      class="form-field"
+                      type="password"
+                      placeholder="Create a Password"
+                      required
+                    />
+                  </div>
+                  <div class="confirm-password-field label-align">
+                    <label class="form-label" for="confirm-password"
+                      >Re-Type Password</label
+                    >
+                    <input
+                      id="confirm-password"
+                      class="form-field"
+                      type="password"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="signup-address-section">
+                  <label class="form-label left-label" for="address-1"
+                    >Address Line 1</label
+                  >
+                  <input
+                    id="address-1"
+                    class="form-field left-field"
+                    type="text"
+                    required
+                  />
+                  <label class="form-label left-label" for="address-2"
+                    >Address Line 2</label
+                  >
+                  <input
+                    id="address-2"
+                    class="form-field left-field"
+                    type="text"
+                  />
+                  <label class="form-label left-label" for="address-3"
+                    >Address Line 3</label
+                  >
+                  <input
+                    id="address-3"
+                    class="form-field left-field"
+                    type="text"
+                  />
+                  <label
+                    class="form-label right-label signup-town-label"
+                    for="town"
+                    >Town</label
+                  >
+                  <input
+                    id="town"
+                    class="form-field right-field signup-town-field"
+                    type="text"
+                    required
+                  />
+                  <label
+                    class="form-label right-label signup-city-label"
+                    city
+                    for="city"
+                    >City</label
+                  >
+                  <input
+                    id="city"
+                    class="form-field right-field signup-city-field"
+                    type="text"
+                    required
+                  />
+                  <label
+                    class="form-label right-label signup-postcode-label"
+                    for="postcode"
+                    >PostCode</label
+                  >
+                  <input
+                    id="postcode"
+                    class="form-field right-field signup-postcode-field"
+                    type="text"
+                    required
+                  />
+                </div>
+                <div class="signup-account-info">
+                  <div class="username-field label-align">
+                    <label class="form-label" for="username">Username</label>
+                    <input
+                      id="username"
+                      class="form-field"
+                      type="text"
+                      required
+                    />
+                  </div>
+                  <div class="valid-section">VALID?</div>
+                  <div class="account-type-field label-align">
+                    <label class="form-label" for="account-type"
+                      >Account Type</label
+                    >
+                    <select class="form-field" id="account-type" required>
+                      <option value="">Select -</option>
+                      <option value="buyer">Buyer</option>
+                      <option value="seller">Seller</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="signup-contact-info">
+                  <div class="email-field label-align">
+                    <label class="form-label" for="email">Email</label>
+                    <input
+                      id="email"
+                      class="form-field"
+                      type="email"
+                      required
+                    />
+                  </div>
+                  <div class="phone-field label-align">
+                    <label class="form-label" for="phone">Phone</label>
+                    <input id="phone" class="form-field" type="tel" />
+                  </div>
+                </div>
+                <div class="marketing-section">
+                  <label class="form-label"
+                    >Would you like to receive updates and newsletters from
+                    us?</label
+                  >
+                  <div class="marketing-section-email">
+                    <label class="form-label" for="marketing-email"
+                      >Email</label
+                    >
+                    <input
+                      id="marketing-email"
+                      type="checkbox"
+                      class="optional-icons-checkbox"
+                      required
+                    />
+                  </div>
+                  <div class="marketing-section-phone">
+                    <label class="form-label" for="marketing-phone"
+                      >Phone</label
+                    >
+                    <input
+                      id="marketing-phone"
+                      type="checkbox"
+                      class="optional-icons-checkbox"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="signup-form-bottom">
+                  <div class="signup-image-view-section">
+                    <img
+                      class="create-listing-img create-listing-img-1"
+                      src="img/placeholder.png"
+                      alt="your first uploaded property image"
+                    />
+                  </div>
+                  <div class="image-upload-btn-section">
+                    <!-- <button class="cta-btn major-btn" href="#"> -->
+
+                    <p class="image-upload-info signup-image-info">
+                      Maximum file size<br />25mb<br />Supported file types:<br />.JPEG,
+                      .JPG, .PNG
+                    </p>
+                    <label for="signup-img-upload" class="cta-btn major-btn">
+                      Upload<ion-icon name="cloud-upload-outline"></ion-icon>
+                    </label>
+                    <input id="signup-img-upload" type="file" />
+                  </div>
+                  <div class="signup-submit-section">
+                    <div class="signup-tandc-confirm">
+                      <label class="form-label" for="tandc"
+                        >I agree to the
+                        <a href="#" class="site-policy-link tandclink"
+                          >Site Policy</a
+                        >
+                        and
+                        <a href="#" class="t-and-c-link tandclink"
+                          >Terms & Conditions</a
+                        ></label
+                      >
+                      <input
+                        id="tandc"
+                        type="checkbox"
+                        class="optional-icons-checkbox"
+                        required
+                      />
+                    </div>
+                    <button class="create-listing-submit reply-btn options-btn">
+                      Sign Up!
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer-content head-foot-container">
